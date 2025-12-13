@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第107回 問290、問291</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291/" target="_blank">第107回 問290、問291</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">58歳男性。身長162cm、体重88kg。10年前から健康診断で、高血圧及び高血糖を指摘されていたが放置していた。喫煙歴30年（1日10本程度）、20歳ごろよりビール大びん2本と日本酒1合程度をほぼ毎日飲酒していた。数ヶ月前より、全身倦怠感が次第に強くなってきているのを自覚していたが、本日、外出中に駅の階段で動けなくなり、救急搬送された。</span></p>
+<p><span style="font-size: 100%;">（来院時の所見及び検査値）</span><br/>
+<span style="font-size: 100%;">意識は清明であり、四肢に運動・感覚障害は認めない。</span><br/>
+<span style="font-size: 100%;">血圧190/110mmHg、心拍数72拍/分、AST 210 IU/L、ALT 150 IU/L、γ–GTP 175 IU/L、</span><span style="font-size: 100%;">血清クレアチニン値0.71 mg/dL、血清浸透圧 300 mOsm/L、血糖値 310 mg/dL、</span><span style="font-size: 100%;">HbA1c 10.5%（NGSP値）、尿糖（3＋）、尿中アルブミン正常、尿蛋白（－）、</span><span style="font-size: 100%;">尿中ケトン体（3＋）、浮腫（－）</span></p>
+<p><strong><span style="font-size: 100%;">問290（病態・薬物治療）</span></strong><br>
+<span style="font-size: 100%;">この患者に起きている状況として、考えられるのはどれか。<u>2つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">高血圧緊急症</span></li>
+<li><span style="font-size: 100%;">くも膜下出血</span></li>
+<li><span style="font-size: 100%;">糖尿病性腎症</span></li>
+<li><span style="font-size: 100%;">高浸透圧高血糖症候群</span></li>
+<li><span style="font-size: 100%;">糖尿病性ケトアシドーシス</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><strong><span style="font-size: 100%;">解答</span></strong><br>
+<span style="font-size: 100%;">１、５</span></p>
+<p><strong><span style="font-size: 100%;">解説</span></strong><br>
+<span style="font-size: 100%;">１　正</span><br>
+<span style="font-size: 100%;">高血圧緊急症とは、血圧の高度の上昇により、脳、心臓、腎臓、大血管などに急性障害が生じる状態のことである。血圧が190/110mmHg であることから、高血圧緊急症の可能性がある。</span></p>
+<p><span style="font-size: 100%;">２　誤</span><br>
+<span style="font-size: 100%;">意識鮮明であり、四肢に運動・感覚障害が認められていないことから、くも膜下出血の可能性は低い。</span></p>
+<p><span style="font-size: 100%;">３　誤</span><br>
+<span style="font-size: 100%;">血清クレアチニン値0.71 mg/dLが基準値範囲内、尿蛋白（－）であることから、糖尿病性腎症の可能性は低い。</span></p>
+<p><span style="font-size: 100%;">４　誤</span><br>
+<span style="font-size: 100%;">血清浸透圧 300 mOsm/Lが基準値範囲内であることから、高浸透圧高血糖症候群の可能性は低い。</span></p>
+<p><span style="font-size: 100%;">５　正</span><br>
+<span style="font-size: 100%;">血糖値 310 mg/dL、HbA1c 10.5%（NGSP値）、尿糖（3＋）、</span><br>
+<span style="font-size: 100%;">尿中ケトン体（3＋）であり、全身倦怠感を自覚していることから糖尿病ケトアシドーシスの可能性がある。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+<p><span style="font-size: 100%;"><!--Ads2--></span></p>
+<p><strong><span style="font-size: 100%;">問291（実務）</span></strong><br>
+<span style="font-size: 100%;">上記患者は、1ヶ月の入院加療後退院し、以下の処方で通院治療を続け、3年が経過した。</span></p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2022-12-22-1-13-17/"><img src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-12-22-1.13.17.png" alt="" width="610" height="254"></a></p>
+<p><span style="font-size: 100%;">　運動療法及び食事療法も指導されたとおり実践しており、処方された薬剤は指示どおり服薬していたが、飲酒はやめられないと話している。今回の検査で以下の結果となり、再教育のため入院となった。</span><br>
+<span style="font-size: 100%;">（所見及び検査値）</span><br>
+<span style="font-size: 100%;">入院時体重68kg、血圧140/85mmHg、心拍数70拍/分、AST 35IU/L、 ALT 42IU/L、γ–GTP 162IU/L、血清クレアチニン値 2.6mg/dL、空腹時血糖値180mg/dL、HbA1c 8.2%（NGSP値）、尿糖（＋）、尿蛋白（2＋）、尿中ケトン体（－）、下肢浮腫（－）</span></p>
+<p><span style="font-size: 100%;">この患者に対する処方提案のうち、適切なのはどれか。<u>2つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">メトホルミンの増量</span></li>
+<li><span style="font-size: 100%;">シタグリプチンをリナグリプチンに変更</span></li>
+<li><span style="font-size: 100%;">フロセミドの追加</span></li>
+<li><span style="font-size: 100%;">テルミサルタンの追加</span></li>
+<li><span style="font-size: 100%;">アムロジピンの増量</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><strong><span style="font-size: 100%;">解答</span></strong><br>
+<span style="font-size: 100%;">２、４</span></p>
+<p><strong><span style="font-size: 100%;">解説</span></strong><br>
+<span style="font-size: 100%;">血清クレアチニン値が 2.6mg/dLと高い値を示しているため、腎機能低下を考慮した薬剤を選択する必要がある。</span></p>
+<p><span style="font-size: 100%;">１　誤</span><br>
+<span style="font-size: 100%;">メトホルミン塩酸塩は、中等度以上の腎障害患者に投与すると、排泄減少により副作用である乳酸アシドーシスのリスクが増大するため、メトホルミンの増量は不適切である。</span></p>
+<p><span style="font-size: 100%;">２　正</span><br>
+<span style="font-size: 100%;">腎排泄型の<a href="https://yakugakulab.info/%e7%b3%96%e5%b0%bf%e7%97%85%e6%b2%bb%e7%99%82%e8%96%ac%e3%80%80%e3%82%b7%e3%82%bf%e3%82%b0%e3%83%aa%e3%83%97%e3%83%81%e3%83%b3%e3%83%aa%e3%83%b3%e9%85%b8%e5%a1%a9%e6%b0%b4%e5%92%8c%e7%89%a9/">シタグリプチン</a>を胆汁排泄型のリナグリプチンに変更することは適切である。</span></p>
+<p><span style="font-size: 100%;">３　誤</span><br>
+<span style="font-size: 100%;">下肢の浮腫などの体液貯留が認められていないため、フロセミドを追加することは不適切である。</span></p>
+<p><span style="font-size: 100%;">４　正</span><br>
+<span style="font-size: 100%;">血圧が140/85 mmHgとコントロール不良であるため、胆汁排泄型アンギオテンシンⅡAT<sub>1</sub>受容体遮断薬（ARB）のテルミサルタンを追加することは適切である。</span></p>
+<p><span style="font-size: 100%;">５　誤</span><br>
+<span style="font-size: 100%;">アムロジピンベシル酸塩は、効果不十分な場合、1日1回10mgまで増量することが可能であるとされている。本症例ではアムロジピンベシル酸塩を1日1回10mg服用しているため、これ以上増量することは不適切である。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+		</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第102回 問304、問305</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac102%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f304%e3%80%9c305/" target="_blank">第102回 問304、問305</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>48歳男性。1週間前に心筋梗塞の診断により経皮的冠動脈インターベンション（PCI）を施行し、ステントを留置した。梗塞部位は良好に拡張されたが、施行5日後と6日後にステント血栓症が発症した。<br/>
+PCI施行後は、以下の薬剤が投与されていた。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac102%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f304%e3%80%9c305/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2019-11-03-0-34-32/" rel="attachment wp-att-27330"><img alt="" class="alignnone wp-image-27330 lazyload" data-aspectratio="595/242" data-src="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32.png 715w, https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32-150x61.png 150w, https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32-300x122.png 300w" decoding="async" height="242" sizes="(max-width: 595px) 100vw, 595px" src="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32.png" width="595"/><noscript><img alt="" class="alignnone wp-image-27330" decoding="async" height="242" sizes="(max-width: 595px) 100vw, 595px" src="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32.png" srcset="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32.png 715w, https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32-150x61.png 150w, https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.34.32-300x122.png 300w" width="595"/></noscript></a></p>
+<p>患者情報<br/>
+脂質異常症の既往あり、喫煙（－）、服薬アドヒアランスは良好<br/>
+現在の検査データ<br/>
+血圧129/77 mmHg、心拍数65 bpm、血清クレアチニン値0.75 mg/dL、BUN 25.4 mg/dL、<br/>
+HbA1c 6.2%、K 4.5 mEq/L、低密度リポタンパク質コレステロール（LDL−C）131 mg/dL、<br/>
+高密度リポタンパク質コレステロール（HDL−C）42 mg/dL、トリグリセリド（TG）110 mg/dL<br/>
+その後、カンファレンスにおいて、ステント血栓症の原因が検討され、薬剤師に意見が求められた。薬剤師は服用中のクロピドグレル治療抵抗性の可能性を提起し、代替薬を提案した。</p>
+<p><strong>問304　（病態・薬物治療）<br/>
+</strong>　クロピドグレルの治療抵抗性の原因として考えられるのはどれか。１つ選べ。</p>
+<ol>
+<li>アスピリンとクロピドグレルの薬物相互作用</li>
+<li>ロサルタンによるクロピドグレルの代謝拮抗</li>
+<li>尿pHの変動によるクロピドグレルの尿細管再吸収の低下</li>
+<li>クロピドグレルの代謝酵素の遺伝子多型</li>
+<li>ロスバスタチンによるクロピドグレルの代謝酵素の誘導</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+4</p>
+<p><strong>動画解説</strong></p>
+<p><noscript><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="281" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/M8s-MTemu80?feature=oembed" title="薬剤師国家試験過去問よりエフィエント（プラスグレル）とプラビックス（クロピドグレル）の違いを確認しよう" width="500"></iframe></noscript><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="lazyload" data-src="https://www.youtube.com/embed/M8s-MTemu80?feature=oembed" frameborder="0" height="281" referrerpolicy="strict-origin-when-cross-origin" title="薬剤師国家試験過去問よりエフィエント（プラスグレル）とプラビックス（クロピドグレル）の違いを確認しよう" width="500"></iframe></p>
+<hr/>
+<p><strong>解説</strong><br/>
+１　誤<br/>
+アスピリンと<a href="https://yakugakulab.info/%e3%82%af%e3%83%ad%e3%83%94%e3%83%89%e3%82%b0%e3%83%ac%e3%83%ab%e7%a1%ab%e9%85%b8%e5%a1%a9/">クロピドグレル</a>を併用すると、血小板凝集抑制作用が強く現れることがあるため、ステント血栓症は現れにくくなる。なお、経皮的冠動脈インターベンション（PCI）が適用される虚血性心疾患に対して、クロピドグレルを使用する場合には、アスピリン（81〜100 mg/日）と併用することとされている。</p>
+<p>２　誤<br/>
+ロサルタンと<a href="https://yakugakulab.info/%e3%82%af%e3%83%ad%e3%83%94%e3%83%89%e3%82%b0%e3%83%ac%e3%83%ab%e7%a1%ab%e9%85%b8%e5%a1%a9/">クロピドグレル</a>の相互作用は報告されていない。</p>
+<p>３　誤<br/>
+尿のpHの変動により<a href="https://yakugakulab.info/%e3%82%af%e3%83%ad%e3%83%94%e3%83%89%e3%82%b0%e3%83%ac%e3%83%ab%e7%a1%ab%e9%85%b8%e5%a1%a9/">クロピドグレル</a>の尿細管再吸収が低下すると報告されていない。</p>
+<p>４　正<br/>
+<a href="https://yakugakulab.info/%e3%82%af%e3%83%ad%e3%83%94%e3%83%89%e3%82%b0%e3%83%ac%e3%83%ab%e7%a1%ab%e9%85%b8%e5%a1%a9/">クロピドグレル</a>はプロドラッグであり、主にCYP2C19の作用により活性代謝物となり血小板凝集抑制作用を示す。日本人には、CYP2C19による代謝能力が低い遺伝子多型poor metabolizer（PM）が約20％存在する。このことより、CYP2C19を投与しても効果を示さない（クロピドグレル治療抵抗性を示す）患者が日本人の5人に1人存在している。<br/>
+本患者のように、CYP2C19の遺伝子多型により<a href="https://yakugakulab.info/%e3%82%af%e3%83%ad%e3%83%94%e3%83%89%e3%82%b0%e3%83%ac%e3%83%ab%e7%a1%ab%e9%85%b8%e5%a1%a9/">クロピドグレル</a>治療抵抗性を示す患者には、主にカルボキシルエステラーゼ及びCYP3A、CYP2B6で活性代謝物となるプラスグレルを投与することが推奨される。</p>
+<p>５　誤<br/>
+ロスバスタチンと<a href="https://yakugakulab.info/%e3%82%af%e3%83%ad%e3%83%94%e3%83%89%e3%82%b0%e3%83%ac%e3%83%ab%e7%a1%ab%e9%85%b8%e5%a1%a9/">クロピドグレル</a>の相互作用は報告されていない。</p>
+</div></div>
+<p><strong>問305　（実務）<br/>
+</strong>　クロピドグレルの代替薬として、以下の薬剤のうち最も適切なのはどれか。１つ選べ。</p>
+<ol>
+<li>トラネキサム酸</li>
+<li>プロタミン</li>
+<li>プラスグレル</li>
+<li>ワルファリン</li>
+<li>メナテトレノン</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+3</p>
+<p><strong>解説</strong><br/>
+問304解説参照。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

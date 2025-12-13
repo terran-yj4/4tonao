@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第110回 問197</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f196%e3%80%9c197/" target="_blank">第110回 問197</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span>70</span>歳男性。陳旧性心筋梗塞、胆管結石の往歴があり、交通外傷で緊急搬送され、入院となった。<span><br/>
+</span>　入院直後に、心室細動、心肺停止となり院内急変対応チームが対応し、心肺蘇生を行ったところ心拍は再開した。その時、バイタルサインは体温<span>34.5</span>℃、血圧<span>86/50 mmHg</span>、心拍<span>113</span>拍<span>/</span>分、呼吸数<span>27</span>回<span>/</span>分で、超音波検査等を実施し、外傷による出血性ショックの診断となった。気管挿管後人工呼吸器管理とし、緊急輸血を行い、生理食塩液とアドレナリン注<span>1mg</span>を投与した。<br/>
+生理食塩液の持続投与下で動脈血液ガス等を確認した結果、医師は<span>8.4w/v%</span>炭酸水素ナトリウム（<span>NaHCO₃</span>）注射液の点滴を開始した。点滴開始から<span>90</span>分後に状態の改善を認めた。<span>8.4w/v% NaHCO₃</span>注射液点滴開始前と点滴開始から<span>90</span>分後の動脈血液ガス等は以下のとおりであった。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f196%e3%80%9c197/screenshot-68/" rel="attachment wp-att-57301"><img alt="" class="wp-image-57301 lazyload" data-aspectratio="651/177" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1.jpg 1898w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-300x82.jpg 300w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-1024x278.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-150x41.jpg 150w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-768x209.jpg 768w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-1536x418.jpg 1536w" decoding="async" height="177" sizes="(max-width: 651px) 100vw, 651px" src="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1.jpg" width="651"/><noscript><img alt="" class="wp-image-57301" decoding="async" height="177" sizes="(max-width: 651px) 100vw, 651px" src="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1.jpg 1898w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-300x82.jpg 300w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-1024x278.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-150x41.jpg 150w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-768x209.jpg 768w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.42.41-1-1536x418.jpg 1536w" width="651"/></noscript></a></p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f196%e3%80%9c197/screenshot-70/" rel="attachment wp-att-57303"><img alt="" class="wp-image-57303 lazyload" data-aspectratio="650/157" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43.jpg 1910w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-300x73.jpg 300w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-1024x248.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-150x36.jpg 150w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-768x186.jpg 768w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-1536x372.jpg 1536w" decoding="async" height="157" sizes="(max-width: 650px) 100vw, 650px" src="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43.jpg" width="650"/><noscript><img alt="" class="wp-image-57303" decoding="async" height="157" sizes="(max-width: 650px) 100vw, 650px" src="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43.jpg 1910w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-300x73.jpg 300w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-1024x248.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-150x36.jpg 150w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-768x186.jpg 768w, https://yakugakulab.info/wp-content/uploads/2025/03/2025-03-04-12.45.43-1536x372.jpg 1536w" width="650"/></noscript></a></p>
+<p><strong>問196（物理・化学・生物）</strong><br/>
+血液中<span>HCO<sub>3</sub></span><sup>－</sup>について、<span>NaHCO<sub>3</sub></span>注射液の点滴開始前の物質量と開始<span>90</span>分後の物質量の差は<span>8.4 w/v% NaHCO<sub>3</sub></span>注射液何<span>mL</span>に相当するか。<span>1</span>つ選べ。ただし、この患者の血液の体積を<span>5.0L</span>とし、点滴による変化や代謝等は考慮しないものとする。また、<span>NaHCO<sub>3</sub></span>の式量を<span>84</span>とする。</p>
+<ol>
+<li>24mL</li>
+<li>48mL</li>
+<li>63mL</li>
+<li>87mL</li>
+<li>102mL</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>4</span></p>
+<p><strong>解説</strong><br/>
+NaHCO₃（炭酸水素ナトリウム）注射液の投与により、血中HCO₃⁻濃度が変化している。この濃度差が示す物質量の変化に相当するNaHCO₃注射液の投与量（mL）を求める。</p>
+<p><strong>【Step 1】血中HCO₃⁻濃度（mEq/L）の差を求める。</strong><br/>
+点滴開始前の血中HCO₃⁻濃度は10.1 mEq/L、点滴90分後は27.4 mEq/Lであることから、その差は 27.4－10.1＝17.3 mEq/L。これは、1Lの血液あたり17.3 mmolのHCO₃⁻が増えたことを意味する。</p>
+<p><strong>【Step 2】血液中の増加したNaHCO₃の物質量を求める。</strong><br/>
+この患者の血液量は<span>5.0 L</span>と仮定されているため、<span>17.3 mmol/L × 5.0 L = 86.5 mmol </span>の<span>NaHCO₃</span>が体内に増加したことになる。</p>
+<p><strong>【Step 3】8.4 w/v％ NaHCO₃注射液のモル濃度を求める。</strong><br/>
+「<span>8.4 w/v</span>％」とは、「<span>100 mL</span>中に<span>NaHCO₃</span>が<span>8.4 g</span>含まれる」ことを意味する。<span>NaHCO₃</span>の分子量（式量）は<span>84</span>であるため、<span>8.4 g ÷ 84 g/mol = 0.1 mol → 8.4 w/v</span>％<span> = 1 mol/L</span></p>
+<p><strong>【Step 4】注射液の必要量を計算</strong><br/>
+1 mol/Lの<span>NaHCO₃</span>注射液を<span>x mL</span>投与して<span>86.5 mmol</span>を補う場合、以下の式が成り立つ<span><br/>
+1 mol</span>：<span>1000 mL </span>＝<span> 86.5 mmol</span>：<span>x mL</span></p>
+</div></div>
+<p><strong>問197（実務）</strong><br/>
+生理食塩液の持続投与に加え、<span>8.4w/v%NaHCO<sub>3</sub></span>注射液が処方された理由として最も適切なのはどれか。１つ選べ。</p>
+<ol>
+<li>ケトアシドーシスであったため。</li>
+<li>呼吸性アシドーシスであったため。</li>
+<li>代謝性アシドーシスであったため。</li>
+<li>PaO<sub>2</sub>が高値であったため。</li>
+<li>ヘモグロビンが低値であったため。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>3</span></p>
+<p><strong>解説</strong><br/>
+１　誤<br/>
+この患者の尿検査ではケトン体が陰性であり、ケトアシドーシス（糖尿病性ケトアシドーシスなど）の所見は認められていない。</p>
+<p>２　誤<br/>
+呼吸性アシドーシスは、肺の換気障害により二酸化炭素（<span>PaCO₂</span>）が蓄積し、血液が酸性に傾く病態である。しかし本症例では、人工呼吸管理が行われており、<span>PaCO₂</span>は改善傾向（<span>63.7 → 45.5 mmHg</span>）を示しているため、呼吸性アシドーシスとは考えにくい。</p>
+<p>３　正<br/>
+本症例では、<span>NaHCO₃</span>投与前の<span>Base Excess</span>（塩基過剰）が<span>−23.0 mEq/L</span>と著しく低下しており、これは重度の代謝性アシドーシスを示す。また、<span>pH 6.82</span>と強い酸性側に傾いていることから、緊急的な補正が必要と判断される。<span>NaHCO₃</span>は、血中<span>HCO₃</span>⁻を補充して酸塩基平衡を是正する目的で使用される。したがって、最も妥当な投与理由は「代謝性アシドーシスの補正」である。</p>
+<p>４　誤<br/>
+<span>　PaO₂</span>は<span>130 mmHg</span>以上と高値を示しているが、これは酸素投与または人工呼吸管理の影響によるものであり、<span>NaHCO₃</span>の投与適応とは直接関係しない。</p>
+<p>５　誤<br/>
+ヘモグロビン値（<span>9.0 g/dL</span>）は基準値よりやや低いものの、<span>NaHCO₃</span>の投与は酸塩基平衡の補正が主目的であり、貧血に対する治療ではない。したがって、これも適応理由にはならない。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

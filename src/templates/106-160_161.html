@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第106回 問160、問161</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac106%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f160%e3%80%9c161/" target="_blank">第106回 問160、問161</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">53歳男性。身長170cm、体重90kg。喫煙歴あり（15本/日）、機会飲酒。数年前から健康診断で血圧が高いことを指摘され、本人も自覚していたが放置していた。最近、軽度のめまい感が頻発するので受診した。</span><br>
+<span style="font-size: 100%;">来院時の血圧は150/95mmHg、心電図検査の胸部誘導でSV1＋RV5=4.0 mV。胸部X線検査で心胸郭比（CTR）56％。血漿レニン活性、血漿アルドステロン濃度、血中カテコールアミン濃度はいずれも正常、HbA1c5.8％（NGSP値）、TG（トリグリセリド）140mg/dL、LDL-C160mg/dL、HDL-C 40mg/dL、尿タンパク（－）であった。2回目の受診時にシルニジピンとフルバスタチンによる治療が開始された。 </span></p>
+<p><span style="font-size: 100%;"><strong>問160（薬理）<br>
+</strong>シルニジピンに関する記述として正しいのはどれか。<u>2つ</u>選べ。 </span></p>
+<ol>
+<li><span style="font-size: 100%;">アンジオテンシンⅡAT<sub>1</sub>受容体を遮断して、血圧を低下させる。</span></li>
+<li><span style="font-size: 100%;">N型Ca<sup>2+</sup>チャネルを遮断して、交感神経終末からのノルアドレナリンの遊離を抑制する。 </span></li>
+<li><span style="font-size: 100%;">L型Ca<sup>2+</sup>チャネルを遮断して、血管平滑筋を弛緩させる。</span></li>
+<li><span style="font-size: 100%;">アドレナリンα<sub>1</sub>受容体を遮断して、末梢血管抵抗を低下させる。</span></li>
+<li><span style="font-size: 100%;">アドレナリンβ<sub>1</sub>受容体を遮断して、レニン分泌を抑制する。 </span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong><br>
+2、3</span></p>
+<p><span style="font-size: 100%;"><strong>解説</strong><br>
+シルニジピンは、ジヒロドピリジン系Ca拮抗薬であり、L型Ca<sup>2+</sup>チャネルを遮断して、血管平滑筋を弛緩させるとともにN型Ca<sup>2+</sup>チャネルを遮断して、交感神経終末からのノルアドレナリンの遊離を抑制する。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+<p><span style="font-size: 100%;"><!--Ads2--></span></p>
+<p><span style="font-size: 100%;"><strong>問161（病態・薬物治療） </strong><br>
+この患者の病態に関する記述のうち、正しいのはどれか。<u>2つ</u>選べ。 </span></p>
+<ol>
+<li><span style="font-size: 100%;">家庭では、血圧が正常である。 </span></li>
+<li><span style="font-size: 100%;">脂質異常症による二次性高血圧である。 </span></li>
+<li><span style="font-size: 100%;">病態の改善には肥満度を下げることが推奨される。 </span></li>
+<li><span style="font-size: 100%;">病態の改善にはカリウム制限を厳密に行う必要がある。 </span></li>
+<li><span style="font-size: 100%;">心肥大がある。 </span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong><br>
+3、5</span></p>
+<p><span style="font-size: 100%;"><strong>解説<br>
+</strong>１誤<br>
+軽度なめまい感が頻発していることから、家庭での血圧も正常でない可能性がある。<br>
+</span></p>
+<p><span style="font-size: 100%;">２誤<br>
+二次性高血圧とは、他の疾患や薬剤により誘発される高血圧であり、その原因として、腎機能低下、内分泌異常、睡眠時無呼吸症候群、脳・中枢神経疾患、薬剤の使用があげられる。本患者は脂質異常症であるが、それが原因で高血圧状態にあるとは考えにくい。<br>
+</span></p>
+<p><span style="font-size: 100%;">３正<br>
+本患者はBMI（90kg /（1.7m<sup>2</sup>）≒31.1）より、肥満であるため、脂質異常症を合併する高血圧を改善するために、肥満度を下げることが推奨される。<br>
+</span></p>
+<p><span style="font-size: 100%;">４誤<br>
+病態の改善には、ナトリウム制限を厳密に行う必要がある。なお、カリウムは、ナトリウムの排泄を促進し血圧を下げる働きがあるため、積極的に摂取することが望ましい。<br>
+</span></p>
+<p><span style="font-size: 100%;">５正<br>
+本患者は、心胸郭比（CTR）が正常値（50%）を上回っているため、心肥大である。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+		</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

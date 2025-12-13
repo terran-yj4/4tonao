@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第107回 問326</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f326%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e6%9c%8d%e7%94%a8%e4%b8%ad/" target="_blank">第107回 問326</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">67歳女性。身長156cm、体重52kg。2型糖尿病、持続性心房細動及び高血圧症で自宅近くの病院に通院し、以下の薬剤を服用している。15日前の定期受診時の血清クレアチニン値は0.92mg/dL、eGFR47.0mL/min/1.73m<sup>2</sup>であった。気温30°C以上の中、庭の草刈りを行っていたところ、頭痛とめまいの症状が出てきたため、今回来院した。そこで、脱水症と診断され、入院して酢酸リンゲル液を投与することとなった。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f326%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e6%9c%8d%e7%94%a8%e4%b8%ad/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2023-03-09-16-35-52/" rel="attachment wp-att-43924"><img alt="" class="alignnone wp-image-43924 lazyload" data-aspectratio="677/281" data-src="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52.png 1350w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-300x124.png 300w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-1024x425.png 1024w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-150x62.png 150w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-768x319.png 768w" decoding="async" height="281" sizes="(max-width: 677px) 100vw, 677px" src="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52.png" width="677"/><noscript><img alt="" class="alignnone wp-image-43924" decoding="async" height="281" sizes="(max-width: 677px) 100vw, 677px" src="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52.png" srcset="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52.png 1350w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-300x124.png 300w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-1024x425.png 1024w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-150x62.png 150w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-16.35.52-768x319.png 768w" width="677"/></noscript></a></span></p>
+<p><span style="font-size: 100%;">（来院時所見）</span><br/>
+<span style="font-size: 100%;">　意識は清明。体温36.8℃、血圧128mmHg、脈拍数108拍/分、尿量20mL/h</span></p>
+<p><span style="font-size: 100%;">（検査値）</span><br/>
+<span style="font-size: 100%;">赤血球数 359×10<sup>4</sup>/µL、Hb 13.4g/dL、Ht 40%、白血球数 3,700/µL</span><br/>
+<span style="font-size: 100%;">血小板数 17×10<sup>4</sup>/µL、BUN 53mg/dL、血清クレアチニン値 1.2mg/dL</span><br/>
+<span style="font-size: 100%;">eGFR 35.1mL/min/1.73m<sup>2</sup>、Na 145mEq/L、K 5.6mEq/L、CL 105mEq/L</span></p>
+<p><span style="font-size: 100%;">この患者の持参薬のうち、薬剤師が入院時に服用中止を提案する薬剤として、適切なのはどれか。<u>２つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">メトホルミン塩酸塩錠</span></li>
+<li><span style="font-size: 100%;">オルメサルタン口腔内崩壊錠</span></li>
+<li><span style="font-size: 100%;">ビソプロロールフマル酸塩錠</span></li>
+<li><span style="font-size: 100%;">リバーロキサバン錠</span></li>
+<li><span style="font-size: 100%;">ランソプラゾール口腔内崩壊錠</span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+1、2</p>
+<p><strong>解説</strong><br/>
+１　正<br/>
+メトホルミン塩酸塩服用中に脱水症状が現れた場合には、乳酸アシドーシスを起こしやすくなるため、投与を中止するなどの適切な処置を行う必要がある。</p>
+<p>２　正<br/>
+オルメサルタンは、高カリウム血症を増悪させる可能性があるため、高カリウム血症の患者に対しては治療上やむを得ないと判断される場合を除き、使用は避けることとされている。</p>
+<p>３　誤<br/>
+ビソプロロールフマル酸塩は、脱水時にも使用することが可能である。</p>
+<p>４　誤<br/>
+リバーロキサバンは、中等度の腎機能障害のある患者に投与すると血中濃度が上昇し、出血の危険性が増大するため、腎機能の程度に応じて10m1日１回に減量することとされている。本症例ではリバーロキサバンは減量されており、服用を中止する必要はない。</p>
+<p>５　誤<br/>
+ランソプラゾールは、脱水時にも使用することが可能である。</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

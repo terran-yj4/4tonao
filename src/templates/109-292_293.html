@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第109回 問292、問293</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f292%e3%80%9c293/" target="_blank">第109回 問292、問293</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>65歳男性。高血圧症と高尿酸血症の治療中で、以下の処方薬を服用している。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f292%e3%80%9c293/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-23-01-13/" rel="attachment wp-att-48009"><img alt="" class="alignnone wp-image-48009 lazyload" data-aspectratio="537/119" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13.png 1144w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-300x67.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-1024x227.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-150x33.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-768x171.png 768w" decoding="async" height="119" sizes="(max-width: 537px) 100vw, 537px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13.png" width="537"/><noscript><img alt="" class="alignnone wp-image-48009" decoding="async" height="119" sizes="(max-width: 537px) 100vw, 537px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13.png 1144w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-300x67.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-1024x227.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-150x33.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.13-768x171.png 768w" width="537"/></noscript></a></p>
+<p>最近血圧が高い日が続き、かかりつけ医より患者情報の共有とともに降圧薬の追加について薬剤師に相談があった。医師から得た検査値と患者情報は以下のとおり。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f292%e3%80%9c293/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-23-01-20/" rel="attachment wp-att-48010"><img alt="" class="alignnone wp-image-48010 lazyload" data-aspectratio="591/136" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20.png 1488w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-300x69.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-1024x235.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-150x34.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-768x177.png 768w" decoding="async" height="136" sizes="(max-width: 591px) 100vw, 591px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20.png" width="591"/><noscript><img alt="" class="alignnone wp-image-48010" decoding="async" height="136" sizes="(max-width: 591px) 100vw, 591px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20.png 1488w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-300x69.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-1024x235.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-150x34.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-23.01.20-768x177.png 768w" width="591"/></noscript></a></p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f292%e3%80%9c293/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-23-03-24/" rel="attachment wp-att-48011"><img alt="" class="alignnone wp-image-48011 lazyload" data-aspectratio="635/133" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24.jpg 1586w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-300x63.jpg 300w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-1024x214.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-150x31.jpg 150w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-768x161.jpg 768w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-1536x322.jpg 1536w" decoding="async" height="133" sizes="(max-width: 635px) 100vw, 635px" src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24.jpg" width="635"/><noscript><img alt="" class="alignnone wp-image-48011" decoding="async" height="133" sizes="(max-width: 635px) 100vw, 635px" src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24.jpg 1586w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-300x63.jpg 300w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-1024x214.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-150x31.jpg 150w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-768x161.jpg 768w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-23.03.24-1536x322.jpg 1536w" width="635"/></noscript></a></p>
+<p><strong>問292（病態・薬物治療）</strong><br/>
+この患者の病態と治療に関する記述のうち、正しいのはどれか。<u>2</u><u>つ</u>選べ。</p>
+<ol>
+<li>偽アルドステロン症が生じている可能性がある。</li>
+<li>高尿酸血症は、腎機能低下による可能性が高い。</li>
+<li>降圧目標は、診察室血圧で140/90mmHg未満である。</li>
+<li>尿酸値は、治療目標値に達している。</li>
+<li>脂質異常症が認められるので、その治療も行う必要がある。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>1</span>、<span>4</span></p>
+<p><strong>解説</strong><br/>
+１　正<br/>
+本患者は芍薬甘草湯を服用していることに加え、カリウム値（基準値：<span>3.5</span>〜<span>4.9mEq</span>）が<span>3.3mEq/L</span>と低値を示していることから、偽アルドステロン症を生じている可能性がある。</p>
+<p>２　誤<br/>
+eGFR（基準値：<span>60 mL/min/1.73m<sup>2</sup></span>以上）が<span>82mL/min/1.73m<sup>2</sup></span>と基準値以上を示していることから、腎機能が正常である。</p>
+<p>３　誤<br/>
+一般的な降圧目標として、<span>75</span>歳未満では診療室血圧で<span>130</span>／<span>80mmHg</span>未満、<span>75</span>歳以上では診療室血圧で<span>140/90mmHg</span>未満とされていることから、本患者（<span>65</span>歳）における降圧目標は、<span>130</span>／<span>80mmHg</span>未満である。</p>
+<p>４　正<br/>
+尿酸値（治療目標値：6.0mg/dL以下）は、<span>5.8mg/dL</span>であるため治療目標値に達している。</p>
+<p>５　誤<br/>
+脂質に関する値（脂質異常症診断基準：<span>TG 15</span>0mg/dL以上、<span>HDL-C 40mg/dL</span>以下、<span>LDL-C 140mg/dL</span>以上）がTG100mg/dL、<span>HDL-C 60mg/dL</span>、<span>LDL-C 110mg/dL</span>であるため、脂質異常症に対する治療を行う必要はない。</p>
+</div></div>
+<p><strong>問293（実務）</strong><br/>
+この患者に追加する降圧薬のうち、適しているのはどれか。<u>2</u><u>つ</u>選べ。</p>
+<ol>
+<li>アムロジピン</li>
+<li>アジルサルタン</li>
+<li>トリクロルメチアジド</li>
+<li>エサキセレノン</li>
+<li>カルベジロール</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>2</span>、<span>4</span></p>
+<p><strong>解説</strong><br/>
+本症例では、高血圧治療薬として<span>Ca</span>拮抗薬であるシルニジピンを使用していることから、同じ作用を有するアムロジピンを併用することは不適切である。また、気管支喘息の既往歴があることを考慮すると、カルベジロール（αβ受容体遮断薬）を併用することは不適切である。<br/>
+トリクロルメチアジド（チアジド系利尿薬）は、低カリウム血症を誘発するためカリウム値が低い場合にトリクロルメチアジドを併用することは不適切であり、アジルサルタン（アンジオテンシンⅡ<span>AT<sub>1</sub></span>受容体拮抗薬）及びエサキセレノン（ミネラルコルチコイド受容体拮抗薬）は、カリウム値を高くすることができるためカリウム値が低い場合に適している。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

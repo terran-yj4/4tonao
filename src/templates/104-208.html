@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第104回 問208</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac104%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f208%e3%80%9c209/" target="_blank">第104回 問208</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">65歳男性。労作時胸部圧迫感を訴え医療機関を受診している。冠動脈造影により左冠動脈前下行枝に75%の強度狭窄を認め、以下の処方薬を服用していた。 3週間後に狭窄部分を押し広げる治療法である経皮的冠動脈インターベンション（PCI）による薬剤溶出ステント留置を行う目的で病院に入院することになった。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac104%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f208%e3%80%9c209/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2019-09-08-18-37-38/" rel="attachment wp-att-25413"><img alt="" class="alignnone wp-image-25413 lazyload" data-aspectratio="565/148" data-src="https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38.png 645w, https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38-150x39.png 150w, https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38-300x79.png 300w, https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38-624x163.png 624w" decoding="async" height="148" sizes="(max-width: 565px) 100vw, 565px" src="https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38.png" width="565"/><noscript><img alt="" class="alignnone wp-image-25413" decoding="async" height="148" sizes="(max-width: 565px) 100vw, 565px" src="https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38.png" srcset="https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38.png 645w, https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38-150x39.png 150w, https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38-300x79.png 300w, https://yakugakulab.info/wp-content/uploads/2019/09/スクリーンショット-2019-09-08-18.37.38-624x163.png 624w" width="565"/></noscript></a></span></p>
+<p><span style="font-size: 100%;"><strong>問208（実務）</strong></span><br/>
+<span style="font-size: 100%;">入院後に持参薬（上記処方）に関するPCI施行前後の服薬計画を立案するにあたって、薬剤師から医師に提案する内容として正しいのはどれか。<u>２つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">PCI施行前日までは、両持参薬とも内服する必要はありません。</span></li>
+<li><span style="font-size: 100%;">PCI施行前にプラスグレル塩酸塩錠を増量する必要はありません。</span></li>
+<li><span style="font-size: 100%;">PCI施行後もアスピリン腸溶錠、プラスグレル塩酸塩錠の服用を継続する必要があります。</span></li>
+<li><span style="font-size: 100%;">PCI施行後はプラスグレル塩酸塩錠のみ服用を継続する必要があります。</span></li>
+<li><span style="font-size: 100%;">PCI施行後はアスピリン腸溶錠のみ服用を継続する必要があります。</span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+2、3</p>
+<p><strong>解説</strong><br/>
+１　誤<br/>
+経皮的冠動脈インターベンション（PCI）は、出血のリスクが少ないため、原則として、抗血小板薬を継続しながら手術を行う。なお、PCI施行時に抗血小板薬を中止する場合は、当日のみ中止し、術直後より再開することとされている。</p>
+<p>２　正<br/>
+PCI施行する際に、プラスグレルを投与する場合、「通常、成人には、投与開始日にプラスグレルとして20mgを1日1回経口投与し、その後、維持用量として1日1回3.75mgを経口投与する。」とされているが、PCI施行前に本剤3.75mgを5日間程度投与されている場合、初回負荷投与（投与開始日に20mgを投与すること）は必須ではないとされている。このことから、本症例では、PCI施行前に5日以上プラスグレルを継続服用することになるため、PCI施行前にプラスグレル塩酸塩錠を増量する必要はない。</p>
+<p>３　正<br/>
+PCI施行後、ステント周辺部に血栓が生じやすくなるため、PCI施行後もアスピリン腸溶錠とプラスグレル塩酸塩錠の服用を継続する必要がある。</p>
+<p>４　誤<br/>
+解説3参照</p>
+<p>５　誤<br/>
+解説3参照</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

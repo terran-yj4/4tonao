@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第108回 問294、問295</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f294%e3%80%9c295%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e8%96%ac%e7%89%a9/" target="_blank">第108回 問294、問295</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">72歳男性。身長167cm、体重75kg。独居。喫煙40本/日、飲酒ビール1L/日。15年前に血圧が高いことを指摘され、2年間薬物療法を行ったが、自己中断した。6ヶ月前に心筋梗塞を発症し、1ヶ月の入院加療を行った。高血圧症、脂質異常症、心筋梗塞のため以下の処方による治療とともに、食事療法、運動療法、禁煙の指導を受けている。なお、今回の来院時の検査値は以下のとおりであった。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f294%e3%80%9c295%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e8%96%ac%e7%89%a9/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2023-09-15-16-13-22/"><img src="https://yakugakulab.info/wp-content/uploads/2023/09/スクリーンショット-2023-09-15-16.13.22.png" alt="" width="487" height="200"></a></span></p>
+<p><span style="font-size: 100%;">（検査値） 血圧136/86mmHg、K 4.5mEq/L、血清アルブミン4.6g/dL、AST 28IU/L、ALT 38IU/L、γ-GTP 78IU/L、血清クレアチニン 0.9mg/dL、BUN 15mg/dL、総コレステロール198mg/dL、LDL-C 119mg/dL、HDL-C 55mg/dL、TG（トリグリセリド）120mg/dL</span></p>
+<p><span style="font-size: 100%;"><strong>問294（病態・薬物治療） </strong></span><br>
+<span style="font-size: 100%;">　この患者の治療に関する記述として、正しいのはどれか。<u>2</u><u>つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">心不全の発症や進展を抑制する目的で、エナラプリルが処方されている。</span></li>
+<li><span style="font-size: 100%;">心筋梗塞後の心室性不整脈を抑制する目的で、アムロジピンが処方されている。</span></li>
+<li><span style="font-size: 100%;">心筋梗塞後の胸痛を緩和する目的で、アスピリンが処方されている。</span></li>
+<li><span style="font-size: 100%;">薬剤性消化性潰瘍を防止する目的で、ラベプラゾールが処方されている。</span></li>
+<li><span style="font-size: 100%;">HDL-Cを低下させる目的で、アトルバスタチンが処方されている。 </span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong></span><br>
+<span style="font-size: 100%;">１、４</span></p>
+<p><span style="font-size: 100%;"><strong>解説</strong></span><br>
+<span style="font-size: 100%;">１　正</span><br>
+<span style="font-size: 100%;">　本患者は、高血圧症、脂質異常症、心筋梗塞があり薬物療法中であることから、今後、心不全を起こす可能性がある。慢性心不全の初期治療には、レニン-アンギオテンシン-アルドステロン系を抑制するACE阻害薬（エナラプリル等）が用いられる。</span></p>
+<p><span style="font-size: 100%;">２　誤</span><br>
+<span style="font-size: 100%;">　アムロジピンは、血管選択性の高いカルシウム拮抗薬であり、高血圧症、狭心症に用いられるが、心筋梗塞後の心室性不整脈を抑制する目的で用いられることはない。なお、心筋梗塞後の心室性不整脈を抑制する目的でリドカインが用いられることがある。</span></p>
+<p><span style="font-size: 100%;">３　誤</span><br>
+<span style="font-size: 100%;">　アスピリンは、抗血小板薬であり、狭心症、心筋梗塞、虚血性脳血管障害における血栓・塞栓形成の抑制に用いられるが、心筋梗塞後の胸痛を緩和する目的で用いられることはない。なお、心筋梗塞後の胸痛を緩和する目的で、モルヒネ塩酸塩が用いられる。</span></p>
+<p><span style="font-size: 100%;">４　正</span><br>
+<span style="font-size: 100%;">　本患者は、血栓・塞栓形成の抑制を目的にアスピリンが処方されていることから、低用量アスピリン投与時における胃潰瘍又は十二指腸潰瘍を防止する目的でラベプラゾールが処方されている。</span></p>
+<p><span style="font-size: 100%;">５　誤</span><br>
+<span style="font-size: 100%;">　アトルバスタチンは、HMG-CoA還元酵素阻害薬であり、LDL-Cを低下させる目的で用いられるが、HDL-Cを低下させる目的で用いられることはない。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+<p><span style="font-size: 100%;"><!--Ads2--></span></p>
+<p><span style="font-size: 100%;"><strong>問295（実務）</strong></span><br>
+<span style="font-size: 100%;">　この患者に対して薬剤師が行う指導として、適切なのはどれか。<u>2</u><u>つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">禁煙補助剤を利用する。</span></li>
+<li><span style="font-size: 100%;">タンパク質制限食品を利用する。</span></li>
+<li><span style="font-size: 100%;">1日30分程度の無酸素運動をする。</span></li>
+<li><span style="font-size: 100%;">現在の体重を維持する。</span></li>
+<li><span style="font-size: 100%;">飲酒量を減らす。 </span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong></span><br>
+<span style="font-size: 100%;">１、５</span></p>
+<p><span style="font-size: 100%;"><strong>解説</strong></span><br>
+<span style="font-size: 100%;">１　正</span><br>
+<span style="font-size: 100%;">　本患者は現在40本／日喫煙しており、禁煙指導を受けている状況にある。また、高血圧症、脂質異常症、心筋梗塞の薬物療法を行なっていることから、心血管系に影響を及ぼすことを考慮して禁煙補助剤を利用することは有用である。</span></p>
+<p><span style="font-size: 100%;">２　誤</span><br>
+<span style="font-size: 100%;">　腎機能障害や肝機能障害では、タンパク質制限が必要であるが、本患者は腎機能、肝機能ともに問題ないため、タンパク質制限食品を利用する必要はない。</span></p>
+<p><span style="font-size: 100%;">３　誤</span><br>
+<span style="font-size: 100%;">　生活習慣病（高血圧症、脂質異常症など）、肥満の治療、予防には、適度な有酸素運動が有用である。</span></p>
+<p><span style="font-size: 100%;">４　誤</span><br>
+<span style="font-size: 100%;">　本患者のBMIは（75kg÷（1.67m）<sup>2</sup>）≒26.9（BMI25以上を肥満とする）であり、肥満状態にあることから体重を減らすことが有用である。</span></p>
+<p><span style="font-size: 100%;">５　正</span><br>
+<span style="font-size: 100%;">　適度な飲酒量は、１日平均純アルコール量として約20g程度とされており、本患者は現在1L／日飲酒していることから飲酒量を減らす必要がある。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+		</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

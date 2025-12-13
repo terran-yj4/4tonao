@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第107回 問344</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f344%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e9%a0%bb%e8%84%88%e6%80%a7/" target="_blank">第107回 問344</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">53歳男性。入院中に発症した頻脈性不整脈に対して以下の処方が開始となった。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f344%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e9%a0%bb%e8%84%88%e6%80%a7/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2023-03-09-17-56-09/" rel="attachment wp-att-43997"><img alt="" class="alignnone wp-image-43997 lazyload" data-aspectratio="519/91" data-src="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09.png 1296w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-300x53.png 300w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-1024x180.png 1024w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-150x26.png 150w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-768x135.png 768w" decoding="async" height="91" sizes="(max-width: 519px) 100vw, 519px" src="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09.png" width="519"/><noscript><img alt="" class="alignnone wp-image-43997" decoding="async" height="91" sizes="(max-width: 519px) 100vw, 519px" src="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09.png" srcset="https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09.png 1296w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-300x53.png 300w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-1024x180.png 1024w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-150x26.png 150w, https://yakugakulab.info/wp-content/uploads/2023/03/スクリーンショット-2023-03-09-17.56.09-768x135.png 768w" width="519"/></noscript></a></span></p>
+<p><span style="font-size: 100%;">　4日後、朝服用して2時間後に血中濃度を測定すると920ng/mLとなっていた（目標域：800ng/mL以下）。なお、患者のeGFRは30mL/min/1.73m<sup>2</sup>であり、肝機能値は正常範囲内であった。この症例に対する薬剤師が医師に行う提案として、<u>適切でない</u>のはどれか。1つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">徐脈や血圧低下の可能性があるため、脈拍数と血圧をモニターする。</span></li>
+<li><span style="font-size: 100%;">低血糖が現れる可能性があるため、血糖値を測定する。</span></li>
+<li><span style="font-size: 100%;">PQの延長やQRS幅の増大などの心電図異常が認められる可能性があるため、心電図をモニターする。</span></li>
+<li><span style="font-size: 100%;">腎機能に応じた投与量の減量をする。</span></li>
+<li><span style="font-size: 100%;">過量投与への対応として5%ブドウ糖液とフロセミドを使用する。</span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+5</p>
+<p><strong>解説</strong><br/>
+　シベンゾリンはVaughan Williams分類Ia群の抗不整脈薬であり、Na<sup>＋</sup>チャネルを遮断することにより活動電位の立ち上がり0相を抑制する。また、K<sup>＋</sup>チャネルを遮断することにより活動電位持続時間と不応期を延長する。そのため、シベンソリンを服用することにより徐脈、血圧低下、PQ延長、QRS幅の増大などが現れることがある。</p>
+<p>１　正しい</p>
+<p>２　正しい<br/>
+　シベンゾリンは、副作用として低血糖を起こすことがあるため、血糖値を測定する必要がある。</p>
+<p>３　正しい</p>
+<p>４　正しい<br/>
+　シベンゾリンは、腎消失型薬物であり、患者のeGFRは30mL/min/1.73m<sup>2</sup>、血中濃度が目標域よりも高いことから、腎機能に応じた投与量を決定すべきである。</p>
+<p>５　誤っている<br/>
+　過量投与への対応として乳酸ナトリウムを必要に応じカリウムとともに持続注入する。また、心抑制症状に対しては必要に応じてドパミン、ドブタミン、イソプレナリン等の投与を行い、低血糖のみ現れている場合は、ブドウ糖の投与を行うが、フロセミドの投与は行わない。</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

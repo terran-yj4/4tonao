@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第105回 問254、問255</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac105%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f254%e3%80%9c255/" target="_blank">第105回 問254、問255</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">55歳男性。10年前に高血圧を指摘され、5年前からニフェジピン徐放錠を服用している。血圧は良好にコントロールされていたが、最近は軽い胸痛を感じることがあった。1週間前、出勤で階段を上っているときに胸部激痛と背部痛が出現し、冷や汗と呼吸困難、意識障害も生じたため救急搬送された。冠動脈造影検査にて左前下行枝の高度狭窄が認められ、心筋梗塞と診断された。直ちにカテーテル治療により薬剤溶出ステントが留置された。</span><br>
+<span style="font-size: 100%;">身体所見:体温36.3℃、血圧145/90mmHg、脈拍75回/分、呼吸数15回/分 現在、以下の処方薬による治療を受けている。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac105%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f254%e3%80%9c255/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2020-08-08-8-28-07/"><img src="https://yakugakulab.info/wp-content/uploads/2020/08/スクリーンショット-2020-08-08-8.28.07.png" alt="" width="586" height="212"></a></span></p>
+<p><span style="font-size: 100%;">しかし、血圧コントロール不良のため、降圧薬の追加について医師より薬剤師に相談があった。</span></p>
+<p><span style="font-size: 100%;"><strong>問254（実務）</strong></span><br>
+<span style="font-size: 100%;">追加が推奨される心筋梗塞後に用いられる薬物として適切なのはどれか。<u>２つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">アムロジピンベシル酸塩</span></li>
+<li><span style="font-size: 100%;">メトプロロール酒石酸塩</span></li>
+<li><span style="font-size: 100%;">プラゾシン塩酸塩</span></li>
+<li><span style="font-size: 100%;">エナラプリルマレイン酸塩</span></li>
+<li><span style="font-size: 100%;">ヒドララジン塩酸塩</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong></span><br>
+<span style="font-size: 100%;">2、4</span></p>
+<p><span style="font-size: 100%;"><strong>解説</strong></span><br>
+<span style="font-size: 100%;">心筋梗塞後に血圧コントロール不良な場合には、心リモデリング・心不全予防効果を有するRA系阻害薬（ACE阻害薬、ARB）、β遮断薬を追加することが推奨される。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+<p><span style="font-size: 100%;"><!--Ads2--></span></p>
+<p><span style="font-size: 100%;"><strong>問255（薬理）</strong></span><br>
+<span style="font-size: 100%;">前問で推奨された薬物の1つ(薬物Aとする)を追加して治療を行っていたが、狭心症発作を起こした。そこでジルチアゼムが追加処方されたが、徐脈が起きたため、ジルチアゼムとの相互作用を疑い薬物Aを中止した。中止した薬物Aの作用として正しいのはどれか。１つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">ブラジキニン分解抑制</span></li>
+<li><span style="font-size: 100%;">心筋L型Ca<sup>2</sup><sup>＋</sup>チャネル遮断</span></li>
+<li><span style="font-size: 100%;">血管平滑筋アドレナリンα<sub>1</sub>受容体遮断</span></li>
+<li><span style="font-size: 100%;">血管平滑筋可溶性グアニル酸シクラーゼ活性化</span></li>
+<li><span style="font-size: 100%;">心筋アドレナリンβ<sub>1</sub>受容体遮断</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong></span><br>
+<span style="font-size: 100%;">5</span></p>
+<p><span style="font-size: 100%;"><strong>解説</strong></span><br>
+<span style="font-size: 100%;">ジルチアゼムは、血管平滑筋のL型カルシウムチャネルを遮断するとともに心筋のCa<sup>2</sup><sup>＋</sup>チャネルも遮断し、心収縮力及び心拍数を減少させるため、β受容体遮断薬と併用すると作用が増強し、徐脈、房室ブロック、洞房ブロックなどが現れることがある。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+		</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第106回 問288、問289</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac106%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f288%e3%80%9c289/" target="_blank">第106回 問288、問289</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">72歳女性。読書中に胸部の違和感が出現し、その直後に目の前が真っ暗になり5秒間程度意識を失った。翌日も、30分に1回くらいの間隔で同様の数秒間の失神発作を繰り返したため、病院に救急搬送された。</span></p>
+<p><span style="font-size: 100%;">搬送時の所見</span><br/>
+<span style="font-size: 100%;">血圧 136/78 mmHg、心拍数70拍/分、赤血球数458×10<sup>4</sup>/µL、Hb 12.9g/dL、Ht 45%、白血球数 7,600/µL、血小板数16×10<sup>4</sup>/µL、AST 32 IU/L、ALT 26 IU/L、CK（クレアチンキナーゼ）112 IU/L、血清クレアチニン値 0.6 mg/dL、血糖値 98 mg/dL、Na 135mEq/L、K 4.1mEq/L</span></p>
+<p><span style="font-size: 100%;">意識消失時に心電図モニターに異常波形（下図）を認め、その際脈拍を触知しなかった。非発作時は意識清明で、心音や呼吸音に異常はない。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac106%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f288%e3%80%9c289/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2022-06-23-19-09-49/" rel="attachment wp-att-39104"><img decoding="async" class="alignnone size-full wp-image-39104 ls-is-cached lazyloaded" src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49.png" data-src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49.png" alt="" width="831" height="330" data-srcset="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49.png 831w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-300x119.png 300w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-150x60.png 150w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-768x305.png 768w" sizes="(max-width: 831px) 100vw, 831px" style="" srcset="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49.png 831w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-300x119.png 300w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-150x60.png 150w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-768x305.png 768w"><noscript><img decoding="async" class="alignnone size-full wp-image-39104" src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49.png" alt="" width="831" height="330" srcset="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49.png 831w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-300x119.png 300w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-150x60.png 150w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.09.49-768x305.png 768w" sizes="(max-width: 831px) 100vw, 831px" ></noscript></a></span></p>
+<p><span style="font-size: 100%;">問 288（病態・薬物治療）</span><br>
+<span style="font-size: 100%;">　この患者の失神発作が起こった機序として、考えられるのはどれか。1つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">不整脈により、生じた血栓が脳血流を障害した。</span></li>
+<li><span style="font-size: 100%;">不整脈により、生じた血栓が冠血流を障害した。</span></li>
+<li><span style="font-size: 100%;">不整脈により、心拍出量が低下した。</span></li>
+<li><span style="font-size: 100%;">心筋収縮力の低下により、心拍出量が低下した。</span></li>
+<li><span style="font-size: 100%;">消化管出血により、血圧が低下した。</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><p></p>
+<p><strong><span style="font-size: 100%;">解答</span></strong><br>
+<span style="font-size: 100%;">3</span></p>
+<p><strong><span style="font-size: 100%;">解説</span></strong><br>
+<span style="font-size: 100%;">設問の心電図から本患者は、多形性心室頻拍（Torsades pointes：TdP）を発症したと推察される。TdPでは、QRS波がらせん状に周期的に変化し、不規則で一致しない多形性を示す。TdPは、不整脈の中でも心室頻拍に該当し、全身にうまく血液を送り出すことができないため、脳への血液灌流が低下し、脳の虚血状態による失神発作を起こすことがある。　</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+<p><strong><span style="font-size: 100%;">問 289（実務）</span></strong><br>
+<span style="font-size: 100%;">　家族から、最近、処方薬が変更になったとの情報を得た。そのため、変更された薬物により意識消失が引き起こされた可能性があると考えた。現在、患者は以下の薬剤を服用している。最も疑わしいのはどれか。1つ選べ。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac106%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f288%e3%80%9c289/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2022-06-23-19-10-09/" rel="attachment wp-att-39105"><img decoding="async" class="alignnone wp-image-39105 lazyloaded" src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09.png" data-src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09.png" alt="" width="621" height="218" data-srcset="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09.png 704w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09-300x105.png 300w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09-150x53.png 150w" sizes="(max-width: 621px) 100vw, 621px" style="" srcset="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09.png 704w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09-300x105.png 300w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09-150x53.png 150w"><noscript><img decoding="async" class="alignnone wp-image-39105" src="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09.png" alt="" width="621" height="218" srcset="https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09.png 704w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09-300x105.png 300w, https://yakugakulab.info/wp-content/uploads/2022/06/スクリーンショット-2022-06-23-19.10.09-150x53.png 150w" sizes="(max-width: 621px) 100vw, 621px" ></noscript></a></span></p>
+<ol>
+<li><span style="font-size: 100%;">シベンゾリン</span></li>
+<li><span style="font-size: 100%;">カルベジロール</span></li>
+<li><span style="font-size: 100%;">ワルファリン</span></li>
+<li><span style="font-size: 100%;">フロセミド</span></li>
+<li><span style="font-size: 100%;">ランソプラゾール</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><p></p>
+<p><strong><span style="font-size: 100%;">解答</span></strong><br>
+<span style="font-size: 100%;">1</span></p>
+<p><strong><span style="font-size: 100%;">解説</span></strong><br>
+<span style="font-size: 100%;">　TdPは、薬剤服用によるQT延長症候群により誘発されることがある。本処方薬の中でQT延長症候群を引き起こしやすい薬物は抗不整脈薬であるシベンゾリンである。シベンゾリンは、K<sup>＋</sup>チャネルを遮断することにより活動電位持続時間と不応期を延長するため、QT延長症候群を引き起こす可能性がある。</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+		</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

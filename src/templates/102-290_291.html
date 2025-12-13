@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第102回 問290、問291</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac102%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291/" target="_blank">第102回 問290、問291</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">62歳男性。１ヶ月ほど前から息切れ、呼吸困難などの心不全症状が出現し、アルコール性心筋症との診断を受け、以下の処方により加療中である。薬剤師が現在の症状を確認すると、「最近は呼吸が苦しくなることが多く、家の中で座っていれば問題ないが、少し散歩するだけでも息切れがする」との訴えがあった。</span></p>
+<p><span style="font-size: 100%;">既往歴：高血圧</span><br>
+<span style="font-size: 100%;">飲酒歴</span><br>
+<span style="font-size: 100%;">心不全症状が出現するまで20年間の大量の飲酒歴があり、禁酒を指導されたが、現在も機会飲酒。</span><br>
+<span style="font-size: 100%;">検査値データ</span><br>
+<span style="font-size: 100%;">左室駆出率23％、下肢浮腫（＋）</span><br>
+<span style="font-size: 100%;">Na 140 mEq/L、K 3.6 mEq/L、Cl 105 mEq/L、SCr1.0 mg/dL、</span><br>
+<span style="font-size: 100%;">血圧123 /72 mmHg、心拍数62 bpm（洞調律）</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac102%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2019-11-03-0-14-05/"><img src="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2019-11-03-0.14.05.png" alt="" width="656" height="315"></a></span></p>
+<p><span style="font-size: 100%;"><strong>問290　（病態・薬物治療）<br>
+</strong>この患者の病態に関する記述のうち、正しいのはどれか。<u>２つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">適切な治療を施しても生存率が低く予後不良である。</span></li>
+<li><span style="font-size: 100%;">NYHA機能分類Ⅲ度（中等度〜重度）の心不全症状を呈している。</span></li>
+<li><span style="font-size: 100%;">肥大型心筋症の病態を呈している。</span></li>
+<li><span style="font-size: 100%;">カリウムの摂取制限が推奨される。</span></li>
+<li><span style="font-size: 100%;">治療の基本に断酒がある。</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong></span><br>
+<span style="font-size: 100%;">2、5</span></p>
+<p><span style="font-size: 100%;"><strong>動画解説</strong></span></p>
+<p style="text-align: center;"><noscript><iframe width="350" height="200" src="//www.youtube.com/embed/V3RYoWwCNAs" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></noscript><iframe width="350" height="200" data-src="//www.youtube.com/embed/V3RYoWwCNAs" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1" class="lazyload"></iframe></p>
+<p><span style="font-size: 100%;"><strong>解説</strong></span><br>
+<span style="font-size: 100%;">１　誤</span><br>
+<span style="font-size: 100%;">アルコール性心筋症は、適切な治療を施せば生存率が高く、比較的予後は良好である。</span></p>
+<p><span style="font-size: 100%;">２　正</span><br>
+<span style="font-size: 100%;">NYHA（New York Heart Association）機能分類は、自覚症状による心不全の重症度の分類である。問題文に「最近は呼吸が苦しくなることが多く、家の中で座っていれば問題ないが、少し散歩するだけでも息切れがする」と訴えがあったと記載されていることから、本患者は、NYHA機能分類Ⅲ度（中等度〜重度）の心不全症状を呈していると考えられる。</span></p>
+<p><span style="font-size: 100%;">３　誤</span><br>
+<span style="font-size: 100%;">アルコール性心筋症では、拡張型心筋症の病態を呈する。</span></p>
+<p><span style="font-size: 100%;">４　誤</span><br>
+<span style="font-size: 100%;">カリウム値は基準値（3.5〜4.9 mEq/L）内にあるため、カリウムの摂取制限を行う必要はない。</span></p>
+<p><span style="font-size: 100%;">５　正</span><br>
+<span style="font-size: 100%;">アルコール性心筋症の治療の基本は、断酒である。断酒を行うことにより心不全症状が改善傾向を示すとされている。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac102%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2022-12-21-23-00-33/"><img src="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2022-12-21-23.00.33.png" alt="" width="698" height="237"></a></span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+<p><span style="font-size: 100%;"><strong>問291　（実務）<br>
+</strong>薬剤師は、現在の病態から、患者の薬物療法に関するアセスメントを行い、今後のプランを考えた。追加を推奨する薬剤として最も適切なのはどれか。１つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">アロプリノール</span></li>
+<li><span style="font-size: 100%;">エポエチンアルファ</span></li>
+<li><span style="font-size: 100%;">アテノロール</span></li>
+<li><span style="font-size: 100%;">カンデサルタンシレキセチル</span></li>
+<li><span style="font-size: 100%;">ジゴキシン</span></li>
+</ol>
+<p><span style="font-size: 100%;"></span></p><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><span style="font-size: 100%;"><strong>解答</strong></span><br>
+<span style="font-size: 100%;">5</span></p>
+<p><span style="font-size: 100%;"><strong>解説</strong></span><br>
+<span style="font-size: 100%;">本患者は、NYHA機能分類Ⅲ度（中等度〜重度）の心不全症状を呈していることから、現在使用している薬に加え、ジゴキシンを追加投与することが推奨される。</span><br>
+<span style="font-size: 100%;">（注：ARBについては、ACE阻害薬で忍容性のない患者に使用されるため、ACEとARBは併用されることはない。）</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2017-07-04-21.29.04.png"><img src="https://yakugakulab.info/wp-content/uploads/2017/07/スクリーンショット-2017-07-04-21.29.04.png" alt="" width="706" height="396"></a></span></p>
+<p><span style="font-size: 100%;"></span></p></div></div><p></p>
+		</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

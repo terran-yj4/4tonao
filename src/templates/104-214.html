@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第104回 問214</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac104%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f214%e3%80%9c215/" target="_blank">第104回 問214</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">50歳女性。3ヶ月前から、ふくらはぎがつることで眠れないなどの症状が出たので、市販の漢方薬Aを服用していた。今回、両下腿浮腫が発現したので、近医を受診し、胸部レントゲン検査にて心拡大を認めたため入院となった。血圧160/64 mmHg、脈拍78回/分、血清カリウム値3.1 mEq/L。動脈血ガス検査にて代謝性アルカローシスを認めた。心電図は正常。心臓超音波検査にて、心機能正常 だが心嚢液貯留を認めた。</span></p>
+<p><span style="font-size: 100%;"><strong>問214（実務）</strong></span><br/>
+<span style="font-size: 100%;">漢方薬Aはどれか。１つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">芍薬甘草湯</span></li>
+<li><span style="font-size: 100%;">八味地黄丸</span></li>
+<li><span style="font-size: 100%;">半夏厚朴湯</span></li>
+<li><span style="font-size: 100%;">大建中湯</span></li>
+<li><span style="font-size: 100%;">牛車腎気丸</span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+1</p>
+<p><strong>解説<br/>
+</strong>　本症例では、ふくらはぎがつることを改善するために市販の漢方薬Aを服用していたことから、漢方薬Aは、芍薬甘草湯であると推察される。<br/>
+１　正<br/>
+芍薬甘草湯は、急激におこる筋肉のけいれんを伴う疼痛、筋肉・関節痛、胃痛、腹痛に用いられる。</p>
+<p>２　誤<br/>
+八味地黄丸は、疲労、倦怠感が著しく、尿量減少または頻数、口渇し、手足に交互的に冷感と熱感のあるものの腎炎、糖尿病、陰萎、坐骨神経痛、腰痛、脚気、膀胱カタル、前立腺肥大、高血圧に用いられる。</p>
+<p>３　誤<br/>
+半夏厚朴湯は、 気分がふさいで、咽喉、食道部に異物感があり、ときに動悸、めまい、嘔気などを伴う不安神経症、神経性胃炎、つわり、せき、しわがれ声、神経性食道狭窄症、不眠症に用いられる。</p>
+<p>４　誤<br/>
+大建中湯は、腹が冷えて痛み、腹部膨満感のあるものに用いられる。</p>
+<p>５　誤<br/>
+牛車腎気丸は、疲れやすくて、四肢が冷えやすく尿量減少または多尿で時に口渇がある、下肢痛、腰痛、しびれ、老人のかすみ目、かゆみ、排尿困難、頻尿、むくみに用いられる。</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

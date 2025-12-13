@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第107回 問252、問253</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f252%e3%80%9c253/" target="_blank">第107回 問252、問253</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">62歳男性。3年前、階段を昇る時に息切れを感じるようになり受診したところ、左室肥大と肺うっ血を認め、慢性心不全と診断された。処方1〜処方3で治療されていたが、慢性心不全の増悪により入院した。その後、処方4を追加して病態が安定したため、退院することになった。現在の検査値等は以下のとおりである。</span></p>
+<p><span style="font-size: 100%;">(検査値)</span><br/>
+<span style="font-size: 100%;">血圧 120/82 mmHg、心拍数 84拍/分、AST 24 IU/L、ALT 16 IU/L、</span><br/>
+<span style="font-size: 100%;">BUN 18 mg/dL、血清クレアチニン値 0.9mg/dL、Na 145 mEq/L、</span><br/>
+<span style="font-size: 100%;">K 2.9 mEq/L、CI 102 mEq/L、血清 BNP 410 pg/mL、左室駆出率 EF 33%</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac107%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f252%e3%80%9c253/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2022-04-19-17-01-48/" rel="attachment wp-att-38816"><img alt="" class="alignnone wp-image-38816 lazyload" data-aspectratio="515/307" data-src="https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48.png 684w, https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48-300x179.png 300w, https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48-150x89.png 150w" decoding="async" height="307" sizes="(max-width: 515px) 100vw, 515px" src="https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48.png" width="515"/><noscript><img alt="" class="alignnone wp-image-38816" decoding="async" height="307" sizes="(max-width: 515px) 100vw, 515px" src="https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48.png" srcset="https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48.png 684w, https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48-300x179.png 300w, https://yakugakulab.info/wp-content/uploads/2022/04/スクリーンショット-2022-04-19-17.01.48-150x89.png 150w" width="515"/></noscript></a></span></p>
+<p><strong><span style="font-size: 100%;">問252（実務）</span></strong><br/>
+<span style="font-size: 100%;">この患者に対する副作用モニタリングとして、適切なのはどれか。<u>2つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">腎機能検査値は基準値内と判断する。</span></li>
+<li><span style="font-size: 100%;">血清電解質（Na、K、CI）値は、いずれも基準値内と判断する。</span></li>
+<li><span style="font-size: 100%;">徐脈と判断する。</span></li>
+<li><span style="font-size: 100%;">今後、処方3の薬剤による血清ナトリウム値の上昇に注意する。</span></li>
+<li><span style="font-size: 100%;">今後、処方1や処方4の薬剤により血清カリウム値が上昇しすぎないか注意する。</span></li>
+</ol>
+<p><strong><span style="font-size: 100%;">問 253（薬理）</span></strong><br/>
+<span style="font-size: 100%;">この患者に追加された処方4の薬物の作用として、適切なのはどれか。1つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">心臓のアドレナリン β受容体を遮断して、BNP値を低下させる。</span></li>
+<li><span style="font-size: 100%;">アンジオテンシン変換酵素を阻害して、心筋の線維化を抑制する。</span></li>
+<li><span style="font-size: 100%;">心筋に直接作用して心収縮力を高めて、左室駆出率を改善する。</span></li>
+<li><span style="font-size: 100%;">ヘンレ係蹄上行脚において Na<sup>＋</sup>と CI<sup>－</sup>の再吸収を抑制して、むくみを改善する。</span></li>
+<li><span style="font-size: 100%;">遠位尿細管及び集合管においてアルドステロン受容体を遮断して、尿中への K<sup>＋</sup>の排泄を抑制する。</span></li>
+</ol>
+<p><span style="font-size: 100%;"><div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;"><p></p>
+<p><strong><span style="font-size: 100%;">問252</span></strong><br/>
+<strong><span style="font-size: 100%;">解答</span></strong><br/>
+<span style="font-size: 100%;">１、５</span></p>
+<p><strong><span style="font-size: 100%;">解説</span></strong><br/>
+<span style="font-size: 100%;">１　正</span><br/>
+<span style="font-size: 100%;">腎機能検査値であるBUN（基準値：8〜20 mg/dL）および血清クレアチニン値（基準値：0.6〜1.0 mg/dL）は基準値範囲内である。</span></p>
+<p><span style="font-size: 100%;">２　誤</span><br/>
+<span style="font-size: 100%;">Na（基準値：135〜148 mEq/L）、CI（基準値：98〜108 mEq/L）は基準値範囲内であるが、K（基準値：3.5〜4.9 mEq/L）は低値である。</span></p>
+<p><span style="font-size: 100%;">３　誤</span><br/>
+<span style="font-size: 100%;">心拍数50未満を徐脈とするため、本患者（心拍数：84）は徐脈ではない。</span></p>
+<p><span style="font-size: 100%;">４　誤</span><br/>
+<span style="font-size: 100%;">処方３（フロセミド）は、ヘンレ係蹄上行脚の管腔側からNa<sup>＋</sup>–K<sup>＋</sup>–2Cl<sup>－</sup>共輸送系を抑制するため、低ナトリウム血症を誘発することがある。</span></p>
+<p><span style="font-size: 100%;">５　正</span><br/>
+<span style="font-size: 100%;">処方１（エナラプリル）、処方４（エプレレノン）は、アルドステロンの作用を抑制するため、血清カリウム値を上昇させる可能性がある。</span></p>
+<p><strong><span style="font-size: 100%;">問253</span></strong><br/>
+<strong><span style="font-size: 100%;">解答</span></strong><br/>
+<span style="font-size: 100%;">５</span></p>
+<p><span style="font-size: 100%;"></span></p></div></div></span></p>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第108回 問258</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f258%e3%80%9c259%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e7%b3%96%e5%b0%bf/" target="_blank">第108回 問258</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">　50歳男性。身長170cm、体重72kg。2型糖尿病及び高血圧症で通院しており、以下の薬剤を1年以上、継続的に服用している。本日、患者が処方箋を持って薬局を訪れた。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f258%e3%80%9c259%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e7%b3%96%e5%b0%bf/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2023-05-01-13-35-05/" rel="attachment wp-att-44996"><img alt="" class="alignnone wp-image-44996 lazyload" data-aspectratio="642/327" data-src="https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05.jpg 2142w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-300x153.jpg 300w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-1024x521.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-150x76.jpg 150w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-768x391.jpg 768w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-1536x782.jpg 1536w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-2048x1042.jpg 2048w" decoding="async" height="327" sizes="(max-width: 642px) 100vw, 642px" src="https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05.jpg" width="642"/><noscript><img alt="" class="alignnone wp-image-44996" decoding="async" height="327" sizes="(max-width: 642px) 100vw, 642px" src="https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05.jpg 2142w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-300x153.jpg 300w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-1024x521.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-150x76.jpg 150w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-768x391.jpg 768w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-1536x782.jpg 1536w, https://yakugakulab.info/wp-content/uploads/2023/05/2023-05-01-13.35.05-2048x1042.jpg 2048w" width="642"/></noscript></a></span></p>
+<p><span style="font-size: 100%;"><strong>問258（実務）<br/>
+</strong>　薬剤師が血圧手帳を確認したところ、3ヶ月前から徐々に血圧が上昇していた。この1週間は収縮期血圧が140mmHgを超えていたため、薬剤師は処方医に降圧薬の追加を提案した。提案する薬剤として、最も適切なのはどれか。1つ選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">アムロジピン錠</span></li>
+<li><span style="font-size: 100%;">イミダプリル塩酸塩錠</span></li>
+<li><span style="font-size: 100%;">カンデサルタンシレキセチル錠</span></li>
+<li><span style="font-size: 100%;">ビソプロロールフマル酸塩錠</span></li>
+<li><span style="font-size: 100%;">アリスキレンフマル酸塩錠</span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+１</p>
+<p><strong>解説動画</strong></p>
+<p><noscript><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/G-gf1g-wr84" width="560"></iframe></noscript><iframe allowfullscreen="allowfullscreen" class="lazyload" data-src="//www.youtube.com/embed/G-gf1g-wr84" height="314" width="560"></iframe></p>
+<p><strong>解説</strong><br/>
+　本患者のように糖尿病合併高血圧患者には、第一選択薬として、Caチャネル遮断薬、アンギオテンシン変換酵素（ACE）阻害薬、アンギオテンシンⅡAT<sub>1</sub>受容体拮抗薬、チアジド系利尿薬が用いられる。これら薬剤を単独で使用しても効果不十分な場合には、薬剤の併用を検討する。その際、レニン-アンギオテンシン系を抑制する薬を併用すると、高カリウム血症、腎障害が現れやすくなるため、レニン-アンギオテンシン系を抑制する薬剤の併用は行わない。また、経口血糖降下薬とβ受容体遮断薬を併用すると、血糖降下作用が強く現れることや低血糖症状をマクスすることがあるため、両剤を併用する際には注意が必要である。<br/>
+本患者は、高血圧治療でアンギオテンシンⅡAT<sub>1</sub>受容体拮抗薬であるテルミサルタンを服用しているが、血圧が徐々に上昇してきているため、Caチャネル遮断薬（アムロジピン）の併用を提案するのが適切である。</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第109回 問290</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291%e3%80%80%e6%85%a2%e6%80%a7%e5%bf%83%e4%b8%8d%e5%85%a8/" target="_blank">第109回 問290</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>79歳女性。3年前、階段を昇る時に息切れを感じるようになり受診したところ、胸部レントゲン写真で心拡大と肺うっ血を認め、心エコー検査等の結果、慢性心不全と診断された。処方1と処方2で治療されていたが、慢性心不全の増悪により入院した。その後、処方1を処方<span>3</span>へ変更し目立った副作用なく病態が安定した。医師は検査値等を確認し、さらに処方<span>4</span>を退院時に追加し退院することになった。退院時の検査値等は以下のとおりである。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291%e3%80%80%e6%85%a2%e6%80%a7%e5%bf%83%e4%b8%8d%e5%85%a8/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-22-58-41/" rel="attachment wp-att-48005"><img alt="" class="alignnone wp-image-48005 lazyload" data-aspectratio="531/474" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41.jpg 1432w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-300x268.jpg 300w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-1024x915.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-150x134.jpg 150w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-768x686.jpg 768w" decoding="async" height="474" sizes="(max-width: 531px) 100vw, 531px" src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41.jpg" width="531"/><noscript><img alt="" class="alignnone wp-image-48005" decoding="async" height="474" sizes="(max-width: 531px) 100vw, 531px" src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41.jpg 1432w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-300x268.jpg 300w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-1024x915.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-150x134.jpg 150w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-04-06-22.58.41-768x686.jpg 768w" width="531"/></noscript></a></p>
+<p><strong>問290（病態・薬物治療）</strong><br/>
+この患者の病態と治療に関する記述として、正しいのはどれか。<u><span>2</span>つ</u>選べ。</p>
+<ol>
+<li>心臓の拡張不全が主体で、収縮不全はみられない。</li>
+<li>息切れと肺うっ血は、左心不全に起因する症状である。</li>
+<li>患者の呼吸症状が改善したので、 ビソプロロールを減量すべきである。</li>
+<li>ダパグリフロジンは、高血糖の改善を目的に追加処方されている。</li>
+<li>血清カリウム値を定期的に測定する。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>2</span>、<span>5</span></p>
+<p><strong>解説</strong><br/>
+１　誤<br/>
+本症例では、左室駆出率（<span>LVEF</span>：基準値<span> 50</span>〜<span>80</span>％）が<span>35</span>％に低下しているため、心臓の収縮不全がみられる。</p>
+<p>２　正<br/>
+心不全により下記の症状が認められる。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f290%e3%80%9c291%e3%80%80%e6%85%a2%e6%80%a7%e5%bf%83%e4%b8%8d%e5%85%a8/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-05-06-23-17-00/" rel="attachment wp-att-48871"><img alt="" class="alignnone size-full wp-image-48871 lazyload" data-aspectratio="2174/736" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00.jpg 2174w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-300x102.jpg 300w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-1024x347.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-150x51.jpg 150w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-768x260.jpg 768w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-1536x520.jpg 1536w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-2048x693.jpg 2048w" decoding="async" height="736" sizes="(max-width: 2174px) 100vw, 2174px" src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00.jpg" width="2174"/><noscript><img alt="" class="alignnone size-full wp-image-48871" decoding="async" height="736" sizes="(max-width: 2174px) 100vw, 2174px" src="https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00.jpg 2174w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-300x102.jpg 300w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-1024x347.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-150x51.jpg 150w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-768x260.jpg 768w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-1536x520.jpg 1536w, https://yakugakulab.info/wp-content/uploads/2024/04/2024-05-06-23.17.00-2048x693.jpg 2048w" width="2174"/></noscript></a></p>
+<p>３　誤<br/>
+退院時、左室駆出率（<span>LVEF</span>：基準値<span> 50</span>〜<span>80</span>％）が<span>35</span>％に低下しており、血清 NT-proBNP 値（基準値：<span>125 pg</span>/mL）が<span>1,200 pg</span>/mLと高値を示していることから、心不全状態であるため、ビソプロロールフマル酸塩を減量せず、継続して服用する必要がある。</p>
+<p>４　正<br/>
+ダパグリフロジンは、<span>1</span>型、<span>2</span>型糖尿病、慢性腎不全（ただし、末期腎不全又は透析施行中の患者を除く）、慢性心不全（ただし、慢性心不全の標準的な治療を受けている患者に限る）に用いられる。本患者は慢性心不全治療中であることから、慢性心不全の治療を目的でダパグリフロジンが処方されていると推察される。なお、血糖コントロールは良好であり、腎機能検査値も基準値範囲内であることから、<span>1</span>型、<span>2</span>型糖尿病、慢性腎不全を治療する目的でダパグリフロジンを処方している可能性は低い。</p>
+<p>５　誤<br/>
+エプレレノン、サクビトリルバルサルタンの併用により高カリウム血症が現れることがあるため、血清カリウム値を定期的に測定する必要がある。</p>
+</div></div>
+<p><strong>問291（実務）</strong><br/>
+追加された処方4の薬剤を服用するにあたり、この患者自身が特に注意する副作用症状として、適切なのはどれか。<u>2</u><u>つ</u>選べ。</p>
+<ol>
+<li>ふらつき</li>
+<li>陰部掻痒感</li>
+<li>歯肉肥厚</li>
+<li>喀痰</li>
+<li>難聴</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>1</span>、<span>2</span></p>
+<p><strong>解説</strong><br/>
+ダパグリフロジンの重大な副作用として、低血糖、尿路感染より起こる腎盂腎炎、外陰部及び会陰部の壊死性筋膜炎、脱水を起こすことがある。よって、ダパグリフロジンを服用する際に、低血糖によるふらつき、尿路感染から起こる陰部掻痒感、脱水による口渇などに注意する必要がある。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

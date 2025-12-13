@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第109回 問220、問221</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f220%e3%80%9c221%e3%80%80%e8%84%b3%e6%80%a7%e3%83%8a%e3%83%88%e3%83%aa%e3%82%a6%e3%83%a0%e5%88%a9/" target="_blank">第109回 問220、問221</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>89歳女性。体重<span>40kg</span>。高血圧症及び慢性心不全に対して処方1で薬物治療を行っている。独居で入院拒否があるため、医師と薬剤師、看護師が訪問している。最近、下腿浮腫が出現し、労作時の息苦しさや疲労感が強くなってきたため、血液検査を実施したところ、脳性ナトリウム利尿ペプチド前駆体<span>N</span>端フラグメント（NT-proBNP）値が<span>3</span>ヶ月前の450pg/mLから下記の検査値になっていた。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f220%e3%80%9c221%e3%80%80%e8%84%b3%e6%80%a7%e3%83%8a%e3%83%88%e3%83%aa%e3%82%a6%e3%83%a0%e5%88%a9/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-19-11-56/" rel="attachment wp-att-47936"><img alt="" class="alignnone wp-image-47936 lazyload" data-aspectratio="632/233" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56.png 1566w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-300x111.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-1024x378.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-150x55.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-768x283.png 768w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-1536x567.png 1536w" decoding="async" height="233" sizes="(max-width: 632px) 100vw, 632px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56.png" width="632"/><noscript><img alt="" class="alignnone wp-image-47936" decoding="async" height="233" sizes="(max-width: 632px) 100vw, 632px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56.png 1566w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-300x111.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-1024x378.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-150x55.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-768x283.png 768w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.11.56-1536x567.png 1536w" width="632"/></noscript></a></p>
+<p>その後、訪問医は継続中だった処方１のうち、エナラプリルのみを中止して、新たに処方<span>2</span>を追加した。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f220%e3%80%9c221%e3%80%80%e8%84%b3%e6%80%a7%e3%83%8a%e3%83%88%e3%83%aa%e3%82%a6%e3%83%a0%e5%88%a9/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-19-12-01/" rel="attachment wp-att-47937"><img alt="" class="alignnone wp-image-47937 lazyload" data-aspectratio="590/84" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01.png 1414w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-300x43.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-1024x146.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-150x21.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-768x110.png 768w" decoding="async" height="84" sizes="(max-width: 590px) 100vw, 590px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01.png" width="590"/><noscript><img alt="" class="alignnone wp-image-47937" decoding="async" height="84" sizes="(max-width: 590px) 100vw, 590px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01.png 1414w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-300x43.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-1024x146.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-150x21.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.01-768x110.png 768w" width="590"/></noscript></a></p>
+<p><strong>問220（物理・化学・生物）</strong><br/>
+下図は、脳性ナトリウム利尿ペプチド（BNP）の生成と代謝の過程を示している。BNPは、mRNAからBNP前駆体タンパク質として翻訳された後、切断されて血中に分泌される。サクビトリルが阻害する酵素ネプリライシンの作用部位は、切断<span>1</span>〜3のいずれかである。以下の記述のうち、正しいのはどれか。<u><span>2</span>つ</u>選べ。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f220%e3%80%9c221%e3%80%80%e8%84%b3%e6%80%a7%e3%83%8a%e3%83%88%e3%83%aa%e3%82%a6%e3%83%a0%e5%88%a9/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-19-12-09/" rel="attachment wp-att-47938"><img alt="" class="alignnone wp-image-47938 lazyload" data-aspectratio="603/549" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09.png 1118w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-300x273.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-1024x932.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-150x137.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-768x699.png 768w" decoding="async" height="549" sizes="(max-width: 603px) 100vw, 603px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09.png" width="603"/><noscript><img alt="" class="alignnone wp-image-47938" decoding="async" height="549" sizes="(max-width: 603px) 100vw, 603px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09.png 1118w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-300x273.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-1024x932.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-150x137.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-19.12.09-768x699.png 768w" width="603"/></noscript></a></p>
+<ol>
+<li>BNPとNT-proBNPは、主に心室から分泌される。</li>
+<li>NT-proBNPは、図のペプチドAである。</li>
+<li>BNPは、NT-proBNPよりも血液中での安定性が高い。</li>
+<li>ネプリライシンの作用部位は、切断3である。</li>
+<li>NT-proBNPは、BNPと同様に腎臓に作用してNa<sup>＋</sup>の尿中への排出を促進する。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>1</span>、<span>4</span></p>
+<p><strong>解説</strong><br/>
+１　正<br/>
+脳性ナトリウム利尿ペプチド（BNP）とNT-proBNPは、主に心室から分泌されるホルモンである。</p>
+<p>２　誤<br/>
+<span>　NT-proBNP</span>（<span>N</span>末端プロ脳性ナトリウム利尿ペプチド）は、<span>proBNP</span>から、脳性ナトリウム利尿ペプチドが分離された<span>N</span>末端を含む残基であり、設問の図におけるペプチド<span>B</span>に該当する。</p>
+<p>３　誤<br/>
+BNPは、<span>NT-proBNP</span>よりも血液中での安定性が低い。そのため、<span>BNP</span>は変動しやすく検査結果の信頼性が低いが、<span>NT-proBNP</span>は、変動しにくく検査結果の信頼性が高い。</p>
+<p>４　正　ネプリライシンは、<span>BNP</span>の分解に関わる酵素であり、設問の図における酵素<span>3</span>に該当する。</p>
+<p>５　誤<br/>
+<span>　NT-proBNP</span>（<span>N</span>末端プロ脳性ナトリウム利尿ペプチド）は、生理活性をほとんど示さない。</p>
+</div></div>
+<p><strong>問221（実務）</strong><br/>
+処方２の薬剤の服用によって生じる可能性が高いのはどれか。<u>２つ</u>選べ。</p>
+<ol>
+<li>血中<span>TSH</span>の上昇</li>
+<li>高カリウム血症</li>
+<li>血圧上昇</li>
+<li>血中NT-proBNPの上昇</li>
+<li>脱水症状</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>2</span>、<span>5</span></p>
+<p><strong>解説</strong><br/>
+サクビトリルバルサルタンは、生体内でサクビトリルとバルサルタンに分離し、それぞれ作用を発現する。サクビトリルはネプリライシンの作用を抑制することにより、ナトリウム利尿ペプチドの作用を増強させ、血管拡張作用、利尿作用を示すため、副作用として、脱水を起こすことがある。また、バルサルタンはアンジオテンシンⅡ<span>AT<sub>1</sub></span>受容体遮断作用によりアルドステロンの機能を低下させるため、副作用として高カリウム血症を起こすことがある。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

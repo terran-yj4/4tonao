@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第108回 問297</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f296%e3%80%9c297%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e6%82%a3%e8%80%85/" target="_blank">第108回 問297</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">　71歳女性。身長152cm、体重48kg。12年前に2型糖尿病と診断されインスリン強化療法を受けた。最近は病状が安定し、経口薬でコントロールされている。以前から血圧が低く、近年は立ちくらみもあり、不定愁訴も多い。最近1年間は、月1回通院して、処方1の薬剤を服用していた。前回（1ヶ月前）の検査値を下に示す。</span></p>
+<p><span style="font-size: 100%;"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f296%e3%80%9c297%ef%bc%88%e5%ae%9f%e8%b7%b5%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e6%82%a3%e8%80%85/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2023-06-09-23-20-45/" rel="attachment wp-att-45144"><img alt="" class="alignnone wp-image-45144 lazyload" data-aspectratio="780/357" data-src="https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45.jpg" data-srcset="https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45.jpg 2230w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-300x137.jpg 300w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-1024x468.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-150x69.jpg 150w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-768x351.jpg 768w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-1536x703.jpg 1536w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-2048x937.jpg 2048w" decoding="async" height="357" sizes="(max-width: 780px) 100vw, 780px" src="https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45.jpg" width="780"/><noscript><img alt="" class="alignnone wp-image-45144" decoding="async" height="357" sizes="(max-width: 780px) 100vw, 780px" src="https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45.jpg" srcset="https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45.jpg 2230w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-300x137.jpg 300w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-1024x468.jpg 1024w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-150x69.jpg 150w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-768x351.jpg 768w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-1536x703.jpg 1536w, https://yakugakulab.info/wp-content/uploads/2023/06/2023-06-09-23.20.45-2048x937.jpg 2048w" width="780"/></noscript></a></span></p>
+<p><span style="font-size: 100%;"><strong>問296（病態・薬物治療） </strong></span><br/>
+<span style="font-size: 100%;">　この患者の状態について、あてはまるのはどれか。<u>2</u><u>つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">ネフローゼ症候群</span></li>
+<li><span style="font-size: 100%;">慢性腎臓病（CKD）</span></li>
+<li><span style="font-size: 100%;">慢性心不全</span></li>
+<li><span style="font-size: 100%;">糖尿病性神経障害</span></li>
+<li><span style="font-size: 100%;">肝硬変 </span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+2、４</p>
+<p><strong>解説</strong><br/>
+１　誤<br/>
+　ネフローゼ症候群とは、たんぱく尿、低アルブミン血症、浮腫、高コレステロール血症を呈する症候群であり、診断基準として「タンパク尿：3.5g/日以上」「低アルブミン血症：血漿アルブミンが3.0g/dL以下」である。本患者は、血漿アルブミン濃度が3.5g/dLであることから、ネフローゼ症候群の可能性は低い。</p>
+<p>２　正<br/>
+　慢性腎臓病（CKD：chronic kidney disease）とは、推算糸球体濾過量（eGFR）が60mL/分/1.73m<sup>2</sup>未満の腎機能低下、あるいはたんぱく尿など腎機能障害を示唆する所見が3ヶ月以上持続する状態である。本患者の１ヶ月前の検査所見において、eGFRが 38.0mL/min/1.73m<sup>2</sup>であることから、慢性腎臓病（CKD）の可能性が高い。</p>
+<p>３　誤<br/>
+　心不全では、BNPが増加する。本患者の１ヶ月前の検査所見において、BNPが基準値以下であることから、慢性心不全の可能性は低い。</p>
+<p>４　正<br/>
+　糖尿病末梢神経障害では、感覚異常、運動神経異常による筋力低下、自律神経異常に伴う消化器症状、血圧低下などを呈することがある。本患者は血圧が低く、立ちくらみもあり、不定愁訴も多いことから、糖尿病末梢神経障害の可能性が高い。</p>
+<p>５　誤<br/>
+　肝機能を示すAST（基準値：8〜33IU/L）、ALT（基準値：4〜45IU/L）、γGTP（女性における基準値：30IU/L以下）、総ビリルビン（基準値：0.4〜1.5mg/dL）が正常範囲にあるため、肝硬変の可能性は低い。</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

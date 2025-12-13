@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第109回 問254、問255</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f254%e3%80%9c255%e3%80%80%e5%bf%83%e5%ae%a4%e7%b4%b0%e5%8b%95%ef%bc%8f%e4%bd%9c%e7%94%a8%e6%a9%9f/" target="_blank">第109回 問254、問255</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>70歳男性。身長<span>165cm</span>、体重50kg。<span>1</span>年前に心筋梗塞を起こし、心室細動による心停止で救命救急センターに搬送され、心蘇生術を施し心機能が回復した。その後、意識消失発作を起こしたため、半年前に埋め込み型除細動器（<span>ICD</span>）<sup>（注）</sup>と以下の処方で治療を開始した。<br/>
+（注）体に埋め込んで、致死的な不整脈を自動的に感知し、電気ショックを与えて心臓の動きを正常にもどす医療機器</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac109%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f254%e3%80%9c255%e3%80%80%e5%bf%83%e5%ae%a4%e7%b4%b0%e5%8b%95%ef%bc%8f%e4%bd%9c%e7%94%a8%e6%a9%9f/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-04-06-20-40-37/" rel="attachment wp-att-47969"><img alt="" class="alignnone wp-image-47969 lazyload" data-aspectratio="511/149" data-src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37.png 1454w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-300x87.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-1024x299.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-150x44.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-768x224.png 768w" decoding="async" height="149" sizes="(max-width: 511px) 100vw, 511px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37.png" width="511"/><noscript><img alt="" class="alignnone wp-image-47969" decoding="async" height="149" sizes="(max-width: 511px) 100vw, 511px" src="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37.png 1454w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-300x87.png 300w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-1024x299.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-150x44.png 150w, https://yakugakulab.info/wp-content/uploads/2024/04/スクリーンショット-2024-04-06-20.40.37-768x224.png 768w" width="511"/></noscript></a></p>
+<p>しかし、その後も<span>ICD</span>が作動することがあり、医師は心室性不整脈予防のための追加薬を検討している。</p>
+<p><strong>問254（実務）</strong><br/>
+追加する薬物として、最も適切なのはどれか。<span>1</span>つ選べ。</p>
+<ol>
+<li>一硝酸イソソルビド</li>
+<li>キニジン</li>
+<li>イソプレナリン</li>
+<li>アミオダロン</li>
+<li>ジルチアゼム</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>4</span></p>
+<p><strong>解説</strong><br/>
+本症例では、不整脈による意識消失発作を起こしたため、埋め込み型除細動器（<span>ICD</span>）で治療を開始したが、<span>ICD</span>が作動することがあり、生命に危険のある再発性不整脈予防のための薬物療法が検討されたと推察される。生命に危険のある再発性不整脈（心室細動、心室頻拍）を予防するためには、アミオダロンやソタロールが用いられる。</p>
+</div></div>
+<p><strong>問255（薬理）</strong><br/>
+前問で追加する薬物が有する作用機序はどれか。<u>２つ</u>選べ。</p>
+<ol>
+<li>可溶性グアニル酸シクラーゼを活性化する。</li>
+<li>アデノシンA<sub>1</sub>受容体を刺激する。</li>
+<li>アセチルコリンM<sub>2</sub>受容体遮断する。</li>
+<li>L型Ca<sup>2</sup><sup>＋</sup>チャネルを遮断する。</li>
+<li>K<sup>＋</sup>チャネルを遮断する。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>4</span>、<span>5</span></p>
+<p><strong>解説</strong><br/>
+アミオダロンは、<span>Vaughan Willams</span>分類Ⅲ群に分類されており、K<sup>＋</sup>チャネルを遮断することにより活動電位持続時間、不応期を延長する。また、アミオダロンは、αβ受容体遮断作用、<span>Na</span><sup>＋</sup>チャネル、<span>Ca<sup>2</sup></span><sup>＋</sup>チャネル遮断作用を示す。</p>
+<div class="is-style-btn_shiny red_">
+<p><a href="https://youtu.be/qO7MuQgqAnE"><strong>解説動画</strong></a></p>
+</div>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

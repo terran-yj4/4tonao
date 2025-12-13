@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第108回 問159</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f159%e3%80%9c160%ef%bc%88%e7%90%86%e8%ab%96%e5%95%8f%e9%a1%8c%ef%bc%89%e3%80%80%e9%ab%98%e8%a1%80/" target="_blank">第108回 問159</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span style="font-size: 100%;">　65歳女性。5年前より高血圧症を指摘されていたが、自覚症状がなく放置していた。数日前より頻回に動悸と気分不良を自覚するようになり、循環器内科を受診した。血圧124/86mmHg、心拍96拍/分（不整）であった。心電図などの諸検査の結果、心房細動と診断され、抗凝固薬が投与されることになった。</span></p>
+<p><span style="font-size: 100%;"><strong>問159（病態・薬物治療）</strong> </span><br/>
+<span style="font-size: 100%;">　この患者の病態と治療に関する記述として、正しいのはどれか。<u>2</u><u>つ</u>選べ。</span></p>
+<ol>
+<li><span style="font-size: 100%;">心電図所見では、P波が消失し、不規則なRR間隔が認められる。</span></li>
+<li><span style="font-size: 100%;">心房細動の重症度判定に、NYHA分類が用いられる。</span></li>
+<li><span style="font-size: 100%;">心拍数の調節には、リドカイン点滴静注を用いる。</span></li>
+<li><span style="font-size: 100%;">1回拍出量は、心房細動の発症前と比べて低下している。</span></li>
+<li><span style="font-size: 100%;">無治療で洞調律に戻ることはない。</span></li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p></p>
+<p><strong>解答</strong><br/>
+1、４</p>
+<p><strong>動画解説</strong></p>
+<p><noscript><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ffYaqk_uZ3k" width="560"></iframe></noscript><iframe allowfullscreen="allowfullscreen" class="lazyload" data-src="//www.youtube.com/embed/ffYaqk_uZ3k" height="314" width="560"></iframe></p>
+<p><strong>解説</strong><br/>
+１　正<br/>
+　心房細動における心電図所見ではP波が消失し、基線が乱れた状態となり、不規則なRR間隔が認められる。</p>
+<p>２　誤<br/>
+　心房細動の重症度判定には、NYHA分類は用いられない。なお、NYHA分類は自覚症状による心不全重症度の分類である。</p>
+<p>３　誤<br/>
+　リドカイン点滴静注は、期外収縮、発作性頻拍の治療に用いられるが、心拍数の調節には用いられない。なお、心拍数の調節には、β受容体遮断薬、非ジヒドロピリジン系Ca拮抗薬、ジギタリス製剤、アミオダロン塩酸塩が用いられる。</p>
+<p>４　正<br/>
+　心房細動では、心房の収縮が不完全になり、血液が心室に十分に送られなくなることで、1回の心拍出量が低下する。</p>
+<p>５　誤<br/>
+　心房細動には、発作性心房細動、持続性心房細動、長期持続性心房細動がある。発作性心房細動では、無治療で洞調律（正常な脈）に戻ることがあるが、持続的に心房細動が継続すると、無治療で洞調律に戻りにくくなる。</p>
+
+<p><span style="font-size: 100%;"></span></p></div></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

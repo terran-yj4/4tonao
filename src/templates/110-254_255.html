@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第110回 問254、問255</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f254%e3%80%9c255/" target="_blank">第110回 問254、問255</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p><span>56</span>歳男性。身長<span>165cm</span>、体重<span>63kg</span>。<span>1</span>年前に健診で心電図異常が見つかり、循環器内科で精密検査となった。その結果、頻脈性不整脈と診断され、ジソピラミド（<span>50mg</span>カプセルを<span>1</span>回<span>1</span>カプセル、<span>1</span>日<span>3</span>回朝昼夕食後服用）による治療が開始され、継続して服用していた。<span>2</span>週間前に動悸や立ちくらみを自覚するようになり、精密検査と治療の見直しのため入院となった。入院から<span>4</span>日目にジソピラミドを<span>1</span>日<span>150mg</span>から<span>300mg</span>に増量したが、症状が改善されなかったことから、ジソピラミドをソタロール<span>(80mg</span>錠を<span>1</span>回<span>1</span>錠、<span>1</span>日<span>2</span>回朝夕食後服用<span>)</span>に変更となった。ソタロール服用開始から<span>5</span>日目に、担当薬剤師が病室を訪れた際に、下図に示す心電図の異常を発見した。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f254%e3%80%9c255/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2025-03-30-16-42-39/" rel="attachment wp-att-57855"><img alt="" class="alignnone wp-image-57855 lazyload" data-aspectratio="623/222" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39.png 1832w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-300x107.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-1024x364.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-150x53.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-768x273.png 768w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-1536x547.png 1536w" decoding="async" height="222" sizes="(max-width: 623px) 100vw, 623px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39.png" width="623"/><noscript><img alt="" class="alignnone wp-image-57855" decoding="async" height="222" sizes="(max-width: 623px) 100vw, 623px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39.png" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39.png 1832w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-300x107.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-1024x364.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-150x53.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-768x273.png 768w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-16.42.39-1536x547.png 1536w" width="623"/></noscript></a></p>
+<p><strong>問254（薬理）</strong><br/>
+この患者に使用された<span>2</span>つの抗不整脈薬に共通する作用機序はどれか。<span>1</span>つ選べ。</p>
+<ol>
+<li>電位依存性<span>Na</span><sup>＋</sup>チャネル遮断</li>
+<li>電位依存性Ca<sup>２＋</sup>チャネル遮断</li>
+<li>電位依存性K<sup>＋</sup>チャネル遮断</li>
+<li>アドレナリンβ受容体遮断</li>
+<li>アセチルコリンM<sub>2</sub>受容体遮断</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>3</span></p>
+<p><strong>解説</strong><br/>
+ジソピラミドは、電位依存性<span>Na</span><sup>＋</sup>チャネル遮断作用、電位依存性<span>K</span><sup>＋</sup>チャネル遮断作用、ムスカリン受容体遮断作用を示す。また、ソタロールは、電位依存性<span>K</span><sup>＋</sup>チャネル遮断作用、アドレナリンβ受容体遮断作用を示す。これらのことから、<span>2</span>つの抗不整脈薬に共通する作用機序は、電位依存性<span>K</span><sup>＋</sup>チャネル遮断作用である。</p>
+</div></div>
+<p><strong>問255（実務）</strong><br/>
+認められた心電図異常はどれか。<span>2</span>つ選べ。</p>
+<ol>
+<li><span>ST</span>上昇</li>
+<li>房室ブロック</li>
+<li>徐脈</li>
+<li>QT延長</li>
+<li>テント状T波の出現</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>3</span>、<span>4</span></p>
+<p><strong>解説</strong><br/>
+本設問の図より、<span>QRS</span>波の始まりから<span>T</span>波の終了まで（<span>QT</span>間隔）が約<span>18</span>マスであることから、<span>QT</span>間隔が<span>0.04</span>秒／マス×約<span>18</span>マス＝約<span>0.72</span>秒となる。<span>QT</span>間隔の基準値は、<span>0.36</span>秒〜<span>0.44</span>秒であることから、<span>QT</span>延長が起こっていると判断できる。また、<span>R-R</span>間隔が約<span>31.5</span>マスであることから、<span>RR</span>間隔が<span>0.04</span>秒／マス×約<span>32</span>マス＝約<span>1.28</span>秒となり、<span>1</span>分間当たりの心拍数が約<span>47</span>回／分（<span>60</span>秒÷<span>1.28</span>秒<span>/</span>回）となる。心拍数の基準値は<span>50</span>〜<span>100</span>回／分であることから、徐脈が起こっていると判断できる。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

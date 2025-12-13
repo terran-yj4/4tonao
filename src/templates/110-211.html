@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第110回 問211</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f210%e3%80%9c211/" target="_blank">第110回 問211</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>86歳女性。高血圧症と<span>2</span>型糖尿病。フレイルによる通院困難のため、多職種の訪問による自宅でのケアと処方<span>1</span>による薬物治療を受けていた。訪問医から病院の循環器科での検査入院を勧められ、心房細動の診断を受け、ワルファリンカリウムによる治療が開始された。退院後、娘が以下の処方箋を持って薬局を訪れた。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f210%e3%80%9c211/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2025-03-30-13-08-27/" rel="attachment wp-att-57821"><img alt="" class="alignnone wp-image-57821 lazyload" data-aspectratio="515/174" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27.png 1376w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-300x101.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-1024x345.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-150x51.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-768x259.png 768w" decoding="async" height="174" sizes="(max-width: 515px) 100vw, 515px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27.png" width="515"/><noscript><img alt="" class="alignnone wp-image-57821" decoding="async" height="174" sizes="(max-width: 515px) 100vw, 515px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27.png" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27.png 1376w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-300x101.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-1024x345.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-150x51.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-13.08.27-768x259.png 768w" width="515"/></noscript></a></p>
+<p>患者は独居だが、近所に住む娘が食事や服薬の管理をしており、今後の在宅療養に合わせて再度アドバイスして欲しいと依頼があった。</p>
+<p><strong>問<span>210</span>（物理・化学・生物）<br/>
+</strong>　処方2に含まれる薬物は、下図のように、還元酵素Aを阻害することで、血液凝固系が機能するために必須な補酵素イが化合物アから生成されるのを抑制する。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f210%e3%80%9c211/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2025-03-30-12-40-20/" rel="attachment wp-att-57822"><img alt="" class="alignnone wp-image-57822 lazyload" data-aspectratio="524/186" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20.png 1298w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-300x106.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-1024x363.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-150x53.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-768x272.png 768w" decoding="async" height="186" sizes="(max-width: 524px) 100vw, 524px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20.png" width="524"/><noscript><img alt="" class="alignnone wp-image-57822" decoding="async" height="186" sizes="(max-width: 524px) 100vw, 524px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20.png" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20.png 1298w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-300x106.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-1024x363.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-150x53.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.20-768x272.png 768w" width="524"/></noscript></a></p>
+<p>化合物アの構造として適切なのはどれか。１つ選べ。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f210%e3%80%9c211/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2025-03-30-12-40-32/" rel="attachment wp-att-57823"><img alt="" class="alignnone wp-image-57823 lazyload" data-aspectratio="468/643" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32.png 1026w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-218x300.png 218w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-745x1024.png 745w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-109x150.png 109w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-768x1055.png 768w" decoding="async" height="643" sizes="(max-width: 468px) 100vw, 468px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32.png" width="468"/><noscript><img alt="" class="alignnone wp-image-57823" decoding="async" height="643" sizes="(max-width: 468px) 100vw, 468px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32.png" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32.png 1026w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-218x300.png 218w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-745x1024.png 745w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-109x150.png 109w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-03-30-12.40.32-768x1055.png 768w" width="468"/></noscript></a></p>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>4</span></p>
+<p><strong>解説</strong><br/>
+処方<span>2</span>に含まれる薬物（ワルファリンカリウム）は、還元酵素<span>A</span>（ビタミン<span>K</span>エポキシド還元酵素）を阻害し、還元型ビタミン<span>K</span>の生成を抑制することで抗凝固作用を示す。設問に示された反応では、化合物アに還元酵素<span>A</span>が作用し、補酵素イ（ヒドロキノン型ビタミン<span>K<sub>2</sub></span>）が生成していることから、化合物アはキノン型ビタミン<span>K<sub>2</sub></span>であると推察することができる。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac110%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f210%e3%80%9c211/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2025-08-14-23-56-17/" rel="attachment wp-att-59324"><img alt="" class="alignnone wp-image-59324 lazyload" data-aspectratio="716/377" data-src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17.png 1628w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-300x158.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-1024x538.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-150x79.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-768x404.png 768w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-1536x808.png 1536w" decoding="async" height="377" sizes="(max-width: 716px) 100vw, 716px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17.png" width="716"/><noscript><img alt="" class="alignnone wp-image-59324" decoding="async" height="377" sizes="(max-width: 716px) 100vw, 716px" src="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17.png" srcset="https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17.png 1628w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-300x158.png 300w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-1024x538.png 1024w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-150x79.png 150w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-768x404.png 768w, https://yakugakulab.info/wp-content/uploads/2025/03/スクリーンショット-2025-08-14-23.56.17-1536x808.png 1536w" width="716"/></noscript></a></p>
+</div></div>
+<p><strong> </strong><strong>問<span>211</span>（実務）<br/>
+</strong>　処方<span>2</span>の薬剤に関連したアドバイスとして、最も適切なのはどれか。１つ選べ。</p>
+<ol>
+<li>健康のため、青汁やクロレラなどを多めに摂取しましょう。</li>
+<li>チーズの摂取は避けてください。</li>
+<li>便の色が黒くなったらすぐに医師や薬剤師に連絡ください。</li>
+<li>骨を丈夫にすると言われるビタミン<span>K</span>のサプリメントを、積極的に摂取しましょう。</li>
+<li>ナットウキナーゼは血栓を溶かすと言われるので、納豆を食べましょう。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+<span>3</span></p>
+<p><strong>解説</strong><br/>
+１　誤<br/>
+ワルファリンは、ビタミン<span>K</span>拮抗作用を示すため、ビタミン<span>K</span>を含有する青汁やクロレラと併用すると作用が減弱する。よって、ワルファリン服用中は、青汁、クロレラの摂取を控える必要がある。</p>
+<p>２　誤<br/>
+ワルファリンとチーズとの併用による相互作用は報告されていない。</p>
+<p>３　正<br/>
+ワルファリンを服用すると、凝固系が抑制されるため消化管出血のリスクが増大する。ワルファリン服用中に便が黒くなる等の症状が現れたら、副作用である消化管出血の可能性があるため、医師、薬剤師に連絡する必要がある。</p>
+<p>４　誤<br/>
+ワルファリンは、ビタミン<span>K</span>拮抗作用を示すため、ビタミン<span>K</span>のサプリメントと併用すると作用が減弱する。よって、ワルファリン服用中は、ビタミン<span>K</span>のサプリメントの摂取を控える必要がある。</p>
+<p>５　誤<br/>
+ワルファリンは、ビタミン<span>K</span>拮抗作用を示すため、ビタミン<span>K</span>を含有する納豆と併用すると作用が減弱する。よって、ワルファリン服用中は、納豆の摂取を控える必要がある。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

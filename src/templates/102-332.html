@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第102回 問332</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac102%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f332/" target="_blank">第102回 問332</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>73歳女性。再発非小細胞肺がんのため、ゲフィチニブ錠250 mgを1日1回服用していたが、軽度の肝機能低下（AST 90 U/L、ALT 63 U/L、ALP 255 U/L）が現れたため処方1が処方された。3週間後、血清カリウム値が3.2 mEq/Lとなったため処方2が追加された。1ヶ月経っても血清カリウム値が3.1 mEq/Lのままであるうえ、血圧が163/91 mmHgとなったため、処方3が追加された。現在では、処方1〜3すべてを服用している。</p>
+<table style="width: 495px;">
+<tbody>
+<tr>
+<td style="width: 485px;"><span style="color: #333333;">（処方1）</span><br/>
+<span style="color: #333333;">グリチルリチン酸−アンモニウム・グリシン・DL−メチオニン配合錠　1回2錠（1日6錠）</span><br/>
+<span style="color: #333333;">1日3回　朝昼夕食後</span><br/>
+<span style="color: #333333;">（処方2）</span><br/>
+<span style="color: #333333;">塩化カリウム徐放錠600 mg　1回2錠（1日4錠）</span><br/>
+<span style="color: #333333;">1日2回　朝夕食後</span><br/>
+<span style="color: #333333;">（処方3）</span><br/>
+<span style="color: #333333;">オルメサルタンメドキソミル錠20 mg　1回1錠（1日1錠）</span><br/>
+<span style="color: #333333;">1日1回　朝食後</span></td>
+</tr>
+</tbody>
+</table>
+<p>女性が、だるくてむくみがあるといって、かかりつけ薬局を訪れた。薬剤師は、処方医に対して以下のような提案をした。提案として最も優先順位が高いのはどれか。１つ選べ。</p>
+<ol>
+<li>グリチルリチン酸−アンモニウム・グリシン・DL−メチオニン配合錠の服用中止を提案する。</li>
+<li>塩化カリウム徐放錠の服用中止を提案する。</li>
+<li>オルメサルタン メドキソミル錠の服用中止を提案する。</li>
+<li>スピロノラクトンの追加を提案する。</li>
+<li>フロセミドの追加を提案する。</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+1</p>
+<p><strong>解説</strong><br/>
+本症例では、ゲフィチニブ使用による肝機能低下に対して、肝機能を改善する目的で（処方1）グリチルリチン酸−アンモニウム・グリシン・DL−メチオニン配合錠が処方されており、その後、カリウム値が低下しているため、（処方2）塩化カリウム徐放錠が処方されたが、低カリウムが改善されない上、高血圧が認められたため、（処方3）オルメサルタン メドキソミル錠が処方されている。<br/>
+上記の内容より、本患者には、（処方1）に含まれるグリチルリチンにより偽アルドステロン症（低カリウム血症、高血圧、四肢の筋力低下など）が現れていると考えられる。<br/>
+偽アルドステロン症が発現した場合には、第一に原因薬物を中止する必要があるため、本症例では、グリチルリチン酸−アンモニウム・グリシン・DL−メチオニン配合錠の服用を中止するように提案する必要がある。</p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

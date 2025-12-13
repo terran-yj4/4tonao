@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第108回 問202</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .question-block {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .post-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        .post-content li {
+            margin: 8px 0;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .post-content strong {
+            color: #2c3e50;
+        }
+        .post-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .post-content a:hover {
+            text-decoration: underline;
+        }
+        .question-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        .question-title a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        /* su-spoilerの簡易スタイルと挙動 */
+        .su-spoiler {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin: 18px 0;
+            background: #fafafa;
+            overflow: hidden;
+        }
+        .su-spoiler-title {
+            cursor: pointer;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            user-select: none;
+        }
+        .su-spoiler-title:focus {
+            outline: 2px solid #4CAF50;
+        }
+        .su-spoiler-icon {
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            transform: rotate(-45deg);
+            transition: transform 0.15s ease-out;
+            display: inline-block;
+        }
+        .su-spoiler.open .su-spoiler-icon {
+            transform: rotate(135deg);
+        }
+        .su-spoiler-content {
+            display: none !important;
+            padding: 12px 14px 18px 14px;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .su-spoiler.open .su-spoiler-content {
+            display: block !important;
+        }
+        /* 初期状態で確実に閉じる */
+        .su-spoiler:not(.open) .su-spoiler-content {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-block">
+        <div class="question-title"><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f202%e3%80%9c203%e3%80%80%e5%bf%83%e9%9b%bb%e5%9b%b3%e5%a4%89%e5%8c%96%ef%bc%8f%e5%bf%83%e6%8b%8d/" target="_blank">第108回 問202</a></div>
+        <div class="post-content">
+<div class="post_content">
+<p>78歳男性。身長<span>170cm</span>、体重<span>68kg</span>。医療機関での治療は受けていない。病院の近隣を歩いていた際に急な心臓発作を起こし救急搬送された。搬送時の心電図はAであり、薬剤<span>X</span>が投与された。X投与の5分後にはBに示す正常な心電図となった。</p>
+<p><a href="https://yakugakulab.info/%e7%ac%ac108%e5%9b%9e%e8%96%ac%e5%89%a4%e5%b8%ab%e5%9b%bd%e5%ae%b6%e8%a9%a6%e9%a8%93%e3%80%80%e5%95%8f202%e3%80%9c203%e3%80%80%e5%bf%83%e9%9b%bb%e5%9b%b3%e5%a4%89%e5%8c%96%ef%bc%8f%e5%bf%83%e6%8b%8d/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2024-02-10-22-06-40/" rel="attachment wp-att-47024"><img alt="" class="alignnone wp-image-47024 lazyload" data-aspectratio="728/231" data-src="https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40.png" data-srcset="https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40.png 2010w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-300x95.png 300w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-1024x325.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-150x48.png 150w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-768x244.png 768w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-1536x488.png 1536w" decoding="async" height="231" sizes="(max-width: 728px) 100vw, 728px" src="https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40.png" width="728"/><noscript><img alt="" class="alignnone wp-image-47024" decoding="async" height="231" sizes="(max-width: 728px) 100vw, 728px" src="https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40.png" srcset="https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40.png 2010w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-300x95.png 300w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-1024x325.png 1024w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-150x48.png 150w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-768x244.png 768w, https://yakugakulab.info/wp-content/uploads/2024/02/スクリーンショット-2024-02-10-22.06.40-1536x488.png 1536w" width="728"/></noscript></a></p>
+<p><strong>問202（実務）</strong><span><strong> </strong><br/>
+</span>この心電図変化をもたらした薬剤Xによる治療として最も考えられるのは次のうちどれか。<span>1</span>つ選べ。</p>
+<ol>
+<li>一硝酸イソソルビド錠の舌下投与</li>
+<li>硝酸イソソルビドスプレーの口腔内噴霧</li>
+<li>アスピリン腸溶錠を噛みくだいて内服</li>
+<li>アミオダロン塩酸塩速崩錠の内服</li>
+<li>ジゴキシンエリキシルの内服</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+２</p>
+<p><strong>解説</strong><br/>
+<span>　X</span>を投与して<span>5</span>分後に心電図が正常に戻っていることから、投与後すぐに効果を示す薬剤を投与したと推察される。<br/>
+１　誤<br/>
+一硝酸イソソルビド錠は、舌下に投与する薬剤でなく内服剤であるため、投与方法が不適切である。</p>
+<p>２　正<br/>
+硝酸イソソルビドスプレーは、口腔内に噴霧する薬剤であり、速やかに効果発現する。</p>
+<p>３　誤<br/>
+アスピリン腸溶錠は、内服剤であり、噛み砕いて内服した場合、効果発現までに<span>15</span>分程度要する。</p>
+<p>４　誤<br/>
+アミオダロン塩酸塩速崩錠は、徐放性の内服剤であり、効果発現までに長時間を要する。</p>
+<p>５　誤<br/>
+ジゴキシンエリキシルは、内服剤であり、効果発現までに<span>15</span>〜<span>30</span>分程度要する。</p>
+</div></div>
+<p><strong>問203（物理・化学・生物）</strong><span><br/>
+</span>　正常な状態におけるこの患者の心臓の<span>1</span>回拍出量が<span>60mL</span>である場合、この患者の心拍出量に最も近い値はどれか。<span>1</span>つ選べ。</p>
+<ol>
+<li>3L/min</li>
+<li>4L/min</li>
+<li>5L/min</li>
+<li>6L/min</li>
+<li>7L/min</li>
+</ol>
+<div class="su-spoiler su-spoiler-style-default su-spoiler-icon-plus su-spoiler-closed" data-anchor-in-url="no" data-scroll-offset="0"><div class="su-spoiler-title su-spoiler-closed" role="button" tabindex="0"><span class="su-spoiler-icon"></span>解答・解説</div><div class="su-spoiler-content su-u-clearfix su-u-trim su-spoiler-closed" style="display: none !important;">
+<p><strong>解答</strong><br/>
+3</p>
+<p><strong>解説</strong><br/>
+設問の図<span>B</span>より、本患者において、心臓が<span>1</span>回拍動するのに要する時間は<span>0.7</span>秒（<span>1</span>マスが<span>0.2</span>秒→<span>RR</span>間隔が<span>3.5</span>マス→心臓が<span>1</span>回拍動するのに要する時間が<span>0.7</span>秒）であると考えられる。よって、<span>1</span>分間あたりの心拍数は、<span>85.7</span>回（<span>60</span>秒／<span>min</span>÷<span>0.7</span>秒／回≒<span>85.7</span>回／<span>min</span>）となる。<br/>
+上記より、この患者の<span>1</span>分間あたりの心拍出量を下記のように求めることができる。<span><br/>
+</span>　<span>60mL /</span>回×85.7回／分≒<span>5142mL /min</span>≒<span>5.1L/min</span></p>
+</div></div>
+</div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.su-spoiler').forEach(spoiler => {
+            const title = spoiler.querySelector('.su-spoiler-title');
+            const content = spoiler.querySelector('.su-spoiler-content');
+
+            if (!content) return;
+
+            // 初期は確実に閉じる
+            spoiler.classList.remove('su-spoiler-open', 'open');
+            spoiler.classList.add('su-spoiler-closed');
+            // インラインスタイルで確実に非表示にする
+            content.style.setProperty('display', 'none', 'important');
+
+            const toggle = () => {
+                const isOpen = spoiler.classList.toggle('open');
+                spoiler.classList.toggle('su-spoiler-closed', !isOpen);
+                spoiler.classList.toggle('su-spoiler-open', isOpen);
+                if (isOpen) {
+                    content.style.setProperty('display', 'block', 'important');
+                } else {
+                    content.style.setProperty('display', 'none', 'important');
+                }
+            };
+
+            if (title) {
+                title.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+                title.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggle();
+                    }
+                });
+                // フォーカスできるように
+                if (!title.hasAttribute('tabindex')) {
+                    title.setAttribute('tabindex', '0');
+                }
+            } else {
+                // titleがない場合はspoiler全体をクリック可能にする
+                spoiler.style.cursor = 'pointer';
+                spoiler.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
